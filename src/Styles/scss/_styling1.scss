@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+	--black: #016464;
+	--orange: #fc5c65;
+}
+
+* {
+	// font-family: "Nunito", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all 0.2s linear;
+}
+
+html {
+	// font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 6rem;
+	scroll-behavior: smooth;
+}
+
+section {
+	padding: 2rem 9%;
+}
+
+.heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: var(--black);
+	padding: 1rem;
+
+	span {
+		text-transform: uppercase;
+		color: var(--orange);
+	}
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 1rem;
+	border-radius: 0.5rem;
+	border: 0.2rem solid var(--black);
+	font-weight: bolder;
+	font-size: 1.7rem;
+	color: var(--black);
+	cursor: pointer;
+	background: #fff;
+	padding: 0.8rem 3rem;
+
+	&:hover {
+		background: var(--orange);
+		color: #fff;
+	}
+}
+
+#menu-bar {
+	font-size: 2.5rem;
+	padding: 0.5rem 1.5rem;
+	border: 0.1rem solid var(--black);
+	color: var(--black);
+	border-radius: 0.3rem;
+	cursor: pointer;
+	display: none;
+}
+
+.home {
+	padding: 0;
+	position: relative;
+
+	.slide-container {
+		.slide {
+			min-height: 70vh;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			padding: 0 9%;
+			padding-top: 9rem;
+
+			.content {
+				flex: 1 1 40rem;
+				animation: slideContent 0.5s linear 1s backwards;
+			}
+
+			.image {
+				flex: 1 1 50rem;
+				padding-bottom: 15rem;
+				position: relative;
+				z-index: 0;
+
+				.shoe {
+					width: 100%;
+					animation: shoe 0.3s linear;
+				}
+
+				.text {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					animation: shoeText 0.5s linear 0.5s backwards;
+				}
+			}
+
+			.content {
+				span {
+					font-size: 2rem;
+					color: var(--orange);
+				}
+
+				h3 {
+					font-size: 5rem;
+					color: var(--black);
+				}
+
+				p {
+					font-size: 1.7rem;
+					color: #666;
+					padding: 0.5rem 0;
+				}
+			}
+		}
+
+		&:nth-child(1) .slide {
+			/* background: url(../images/home-bg-1.jpg) no-repeat; */
+			background-size: cover;
+			background-position: center;
+		}
+
+		&:nth-child(2) .slide {
+			/* background: url(../images/home-bg-2.jpg) no-repeat; */
+			background-size: cover;
+			background-position: center;
+		}
+
+		&:nth-child(3) .slide {
+			/* background: url(../images/home-bg-3.jpg) no-repeat; */
+			background-size: cover;
+			background-position: center;
+		}
+
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	#prev,
+	#next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		border-radius: 50%;
+		z-index: 100;
+		height: 5rem;
+		width: 5rem;
+		line-height: 4.5rem;
+		font-size: 2rem;
+		color: var(--black);
+		border: 0.2rem solid var(--black);
+		cursor: pointer;
+		text-align: center;
+	}
+
+	#prev:hover,
+	#next:hover {
+		color: #fff;
+		background: var(--orange);
+	}
+
+	#prev {
+		left: 3rem;
+	}
+
+	#next {
+		right: 3rem;
+	}
+}
+
+@keyframes slideContent {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+}
+
+@keyframes shoe {
+	0% {
+		transform: rotate(0deg) scale(0.5);
+	}
+}
+
+@keyframes shoeText {
+	0% {
+		opacity: 0;
+		top: -10rem;
+	}
+}
+
+.service .box-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	background: #f9f9f9;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	padding: 2rem;
+
+	.box {
+		text-align: center;
+		flex: 1 1 30rem;
+
+		i {
+			font-size: 4rem;
+			color: var(--orange);
+		}
+
+		h3 {
+			font-size: 2rem;
+			color: var(--black);
+			padding-top: 1rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+			color: #666;
+			padding: 1rem 0;
+		}
+	}
+}
+
+.products .box-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+
+	.box {
+		border: 0.1rem solid rgba(0, 0, 0, 0.1);
+		border-radius: 0.5rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		background: #f9f9f9;
+		flex: 1 1 30rem;
+
+		.content {
+			padding: 1.5rem;
+		}
+
+		img {
+			height: 10rem;
+			filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+			margin: 8rem 2rem;
+		}
+
+		.icons {
+			display: flex;
+			flex-flow: column;
+			position: absolute;
+			top: 0.5rem;
+			left: -10rem;
+		}
+
+		&:hover .icons {
+			left: 1rem;
+		}
+
+		.icons a {
+			height: 4.5rem;
+			width: 5rem;
+			line-height: 4.5rem;
+			font-size: 2rem;
+			color: var(--black);
+			border: 0.1rem solid var(--black);
+			border-radius: 0.5rem;
+			background: #fff;
+			margin-top: 0.5rem;
+
+			&:hover {
+				background: var(--orange);
+				color: #fff;
+			}
+		}
+
+		.content {
+			h3 {
+				color: var(--black);
+				font-size: 2.5rem;
+			}
+
+			.price {
+				color: var(--black);
+				font-size: 2.5rem;
+				font-weight: bolder;
+				padding: 1rem 0;
+
+				span {
+					color: var(--orange);
+					font-size: 1.5rem;
+					text-decoration: line-through;
+				}
+			}
+
+			.stars {
+				padding-bottom: 1rem;
+
+				i {
+					font-size: 1.7rem;
+					color: var(--orange);
+				}
+			}
+		}
+	}
+}
+
+.featured .row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	background: #f9f9f9;
+	padding: 2rem;
+	align-items: center;
+	margin: 1.5rem 0;
+
+	.content {
+		flex: 1 1 40rem;
+	}
+
+	.image-container {
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
+		flex: 1 1 50rem;
+
+		.small-image {
+			width: 20%;
+		}
+
+		.big-image {
+			width: 80%;
+			padding: 1rem;
+		}
+
+		.small-image img {
+			width: 100%;
+			padding: 1rem;
+			border: 0.1rem solid rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+
+			&:hover {
+				background: #ccc;
+			}
+		}
+
+		.big-image img {
+			width: 100%;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.content {
+		h3 {
+			font-size: 2.5rem;
+			color: var(--black);
+		}
+
+		.stars i {
+			font-size: 1.7rem;
+			color: var(--orange);
+			padding: 0.5rem 0;
+		}
+
+		p {
+			font-size: 1.5rem;
+			color: #666;
+			padding: 1rem 0;
+		}
+
+		.price {
+			font-size: 2.5rem;
+			color: var(--black);
+			font-weight: bolder;
+
+			span {
+				font-size: 1.5rem;
+				color: var(--orange);
+				text-decoration: line-through;
+			}
+		}
+	}
+}

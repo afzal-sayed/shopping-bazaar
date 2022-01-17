@@ -1,0 +1,85 @@
+/* !product */
+.products .box-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+
+	.box {
+		border: 0.1rem solid rgba(0, 0, 0, 0.1);
+		border-radius: 0.5rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		background: #f9f9f9;
+		flex: 1 1 30rem;
+
+		.content {
+			padding: 1.5rem;
+		}
+
+		img {
+			height: 10rem;
+			filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+			margin: 8rem 2rem;
+		}
+
+		.icons {
+			display: flex;
+			flex-flow: column;
+			position: absolute;
+			top: 0.5rem;
+			left: -10rem;
+		}
+
+		&:hover .icons {
+			left: 1rem;
+		}
+
+		.icons a {
+			height: 4.5rem;
+			width: 5rem;
+			line-height: 4.5rem;
+			font-size: 2rem;
+			color: var(--black);
+			border: 0.1rem solid var(--black);
+			border-radius: 0.5rem;
+			background: #fff;
+			margin-top: 0.5rem;
+
+			&:hover {
+				background: var(--orange);
+				color: #fff;
+			}
+		}
+
+		.content {
+			h3 {
+				color: var(--black);
+				font-size: 2.5rem;
+			}
+
+			.price {
+				color: var(--black);
+				font-size: 2.5rem;
+				font-weight: bolder;
+				padding: 1rem 0;
+
+				span {
+					color: var(--orange);
+					font-size: 1.5rem;
+					text-decoration: line-through;
+				}
+			}
+
+			.stars {
+				padding-bottom: 1rem;
+
+				i {
+					font-size: 1.7rem;
+					color: var(--orange);
+				}
+			}
+		}
+	}
+}
+/* !product end */

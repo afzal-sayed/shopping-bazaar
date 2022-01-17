@@ -1,0 +1,18 @@
+$bgcolor: rgba(15, 51, 255, 0.8);
+$fontcolor: rgb(0, 0, 0);
+$white: rgba(255, 255, 255, 0.8);
+
+/* !header */
+
+.navclr {
+	background-color: $bgcolor;
+}
+.logosize {
+	font-weight: bold;
+}
+.hambtn {
+	font-size: 1.5em;
+	color: $fontcolor;
+}
+
+/* !header end */
