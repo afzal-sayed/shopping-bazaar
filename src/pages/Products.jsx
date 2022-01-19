@@ -1,19 +1,24 @@
 import React, { Component } from 'react'
 import "../Styles/css/styling.css";
 
+import mfasion1 from '../img/Mens fashion/mfasion1.png'
+import mfasion2 from '../img/Mens fashion/mfashion2.png'
+import shirt from '../img/shirt.png'
+
+
 export default class Products extends Component {
     render() {
         return (
             <div>
                 <section className="products" id="products">
-                    
+
                     <h1 className="heading"> Men's <span> Fashion</span> </h1>
                     <div className="box-container">
                         <div className="box">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Mens fashion/mfasion1.png" alt="" />
+                            <img src={mfasion1} alt="" />
                             <div className="content">
                                 <h3>DCROOZ full sleeves sweatshirt</h3>
                                 <div className="price">Rs. 1850.00 <span>Rs. 2000.00</span></div>
@@ -31,7 +36,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Mens fashion/mfashion2.png" alt="" />
+                            <img src={mfasion2} alt="" />
                             <div className="content">
                                 <h3>Slim Bomber Jacket Male</h3>
                                 <div className="price">Rs. 2000.00 <span>Rs. 2250.00</span></div>
@@ -49,7 +54,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/shirt.png" alt="" />
+                            <img src={shirt} alt="" />
                             <div className="content">
                                 <h3>Mens travel warm summer </h3>
                                 <div className="price">Rs.750.00 <span>Rs.900.00</span></div>

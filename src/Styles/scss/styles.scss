@@ -6,3 +6,11 @@
 @import "account";
 @import "myorder";
 @import "userProfile";
+@import "cartScreen";
+@import "deliveryAddress";
+
+.errormsg {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}

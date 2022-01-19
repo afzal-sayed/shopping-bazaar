@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import user2 from '../img/user2.png'
+import watch from '../img/watch1.png'
+
+
 export default class MyOrder extends Component {
     render() {
         return (
@@ -12,7 +16,7 @@ export default class MyOrder extends Component {
                                 <div className="border-bottom p-4">
                                     <div className="osahan-user text-center">
                                         <div className="osahan-user-media">
-                                            <img className="mb-3 rounded-pill shadow-sm mt-1" src="../img/user2.png" alt="gurdeep singh osahan" />
+                                            <img className="mb-3 rounded-pill shadow-sm mt-1" src={user2} alt="gurdeep singh osahan" />
                                             <div className="osahan-user-media-body">
                                                 <h6 className="mb-2">Tazeen Shaikh</h6>
                                                 <p className="mb-1">+91 8568224564</p>
@@ -40,7 +44,7 @@ export default class MyOrder extends Component {
                                                 </a>
                                                 <div className="media">
                                                     <a href="#">
-                                                        <img className="mr-4" src="../img/watch1.png" alt="Generic placeholder image" />
+                                                        <img className="mr-4" src={watch} alt="Generic placeholder image" />
                                                     </a>
                                                     <div className="media-body">
                                                         <a href="#">
@@ -76,7 +80,7 @@ export default class MyOrder extends Component {
                                                 </a>
                                                 <div className="media">
                                                     <a href="#">
-                                                        <img className="mr-4" src="../img/watch1.png" alt="Generic placeholder image" />
+                                                        <img className="mr-4" src={watch} alt="Generic placeholder image" />
                                                     </a>
                                                     <div className="media-body">
                                                         <a href="#">

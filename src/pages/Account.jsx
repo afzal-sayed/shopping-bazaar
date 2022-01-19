@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import user from '../img/User.png'
+
 
 export default class Account extends Component {
     render() {
@@ -15,7 +17,7 @@ export default class Account extends Component {
                                 </div>
                                 <div className="author-card-profile">
                                     <div className="author-card-avatar">
-                                        <img src="../img/User.png" alt="Daniel Adams" />
+                                        <img src={user} alt="Daniel Adams" />
                                     </div>
                                     <div className="author-card-details">
                                         <h5 className="author-card-name text-lg">Tazeen Shaikh</h5><span className="author-card-position">Joined

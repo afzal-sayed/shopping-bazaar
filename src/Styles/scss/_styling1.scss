@@ -7,8 +7,8 @@
 
 * {
 	// font-family: "Nunito", sans-serif;
-	margin: 0;
-	padding: 0;
+	// margin: 0;
+	// padding: 0;
 	box-sizing: border-box;
 	outline: none;
 	border: none;
@@ -31,7 +31,7 @@ section {
 .heading {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 4rem;
+	// font-size: 4rem;
 	color: var(--black);
 	padding: 1rem;
 
@@ -47,7 +47,7 @@ section {
 	border-radius: 0.5rem;
 	border: 0.2rem solid var(--black);
 	font-weight: bolder;
-	font-size: 1.7rem;
+	// font-size: 1.7rem;
 	color: var(--black);
 	cursor: pointer;
 	background: #fff;
@@ -218,18 +218,18 @@ section {
 		flex: 1 1 30rem;
 
 		i {
-			font-size: 4rem;
+			// font-size: 4rem;
 			color: var(--orange);
 		}
 
 		h3 {
-			font-size: 2rem;
+			// font-size: 2rem;
 			color: var(--black);
 			padding-top: 1rem;
 		}
 
 		p {
-			font-size: 1.5rem;
+			// font-size: 1.5rem;
 			color: #666;
 			padding: 1rem 0;
 		}
@@ -276,7 +276,7 @@ section {
 			height: 4.5rem;
 			width: 5rem;
 			line-height: 4.5rem;
-			font-size: 2rem;
+			// font-size: 2rem;
 			color: var(--black);
 			border: 0.1rem solid var(--black);
 			border-radius: 0.5rem;
@@ -292,18 +292,18 @@ section {
 		.content {
 			h3 {
 				color: var(--black);
-				font-size: 2.5rem;
+				// font-size: 2.5rem;
 			}
 
 			.price {
 				color: var(--black);
-				font-size: 2.5rem;
+				// font-size: 2.5rem;
 				font-weight: bolder;
 				padding: 1rem 0;
 
 				span {
 					color: var(--orange);
-					font-size: 1.5rem;
+					// font-size: 1.5rem;
 					text-decoration: line-through;
 				}
 			}
@@ -312,7 +312,7 @@ section {
 				padding-bottom: 1rem;
 
 				i {
-					font-size: 1.7rem;
+					// font-size: 1.7rem;
 					color: var(--orange);
 				}
 			}
@@ -372,29 +372,29 @@ section {
 
 	.content {
 		h3 {
-			font-size: 2.5rem;
+			// font-size: 2.5rem;
 			color: var(--black);
 		}
 
 		.stars i {
-			font-size: 1.7rem;
+			// font-size: 1.7rem;
 			color: var(--orange);
 			padding: 0.5rem 0;
 		}
 
 		p {
-			font-size: 1.5rem;
+			// font-size: 1.5rem;
 			color: #666;
 			padding: 1rem 0;
 		}
 
 		.price {
-			font-size: 2.5rem;
+			// font-size: 2.5rem;
 			color: var(--black);
 			font-weight: bolder;
 
 			span {
-				font-size: 1.5rem;
+				// font-size: 1.5rem;
 				color: var(--orange);
 				text-decoration: line-through;
 			}
