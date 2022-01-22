@@ -4,7 +4,7 @@
 2) start git repository
     -these are command to run only once for first time
     -git init
-    -git remote add origin git@bitbucket.org:PyRayx01/librarybrowser.git
+    -git remote add origin git@github.com:SayX-C/shopping-bazaar.git
     -git pull origin master
     - * it will download folder from server and make everything there
 
