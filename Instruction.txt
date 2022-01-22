@@ -1,0 +1,21 @@
+1) first start with a folder 
+    -a folder that is permanent with this project
+    -go in there (go in that folder)
+2) start git repository
+    -these are command to run only once for first time
+    -git init
+    -git remote add origin git@bitbucket.org:PyRayx01/librarybrowser.git
+    -git pull origin master
+    - * it will download folder from server and make everything there
+
+3) read Readme.md in repository
+4) create point in time line
+    -git add . (this will add files to staging area , area which is temporary)
+    -git commmit -m "your meaning full msg here" (this command followed by -m is optional , in order to commit just type git commit and it will open file in selected text editor type multi line msg there about what change,if msg is one line use -m)
+    -git push (if doing this push command first time use | -u origin master | with it , this command pushed code to server)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OPTIONAL
+
+Visual studio code is having this commands as basic tools in its source control pannel if comfurtable with that use it
