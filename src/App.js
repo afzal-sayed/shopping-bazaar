@@ -19,6 +19,7 @@ import OrderPlaced from "./pages/OrderPlaced";
 import Products from "./pages/Products";
 import Reciept from "./pages/Reciept";
 import WishList from "./pages/WishList";
+import ContanctUs from "./pages/ContanctUs";
 
 function App() {
 	return (
@@ -38,6 +39,7 @@ function App() {
 					<Route path='/OrderPlaced' element={<OrderPlaced />} />
 					<Route path='/Products' element={<Products />} />
 					<Route path='/Reciept' element={<Reciept />} />
+					<Route path='/ContactUs' element={<ContanctUs />} />
 					<Route path='/WIshList' element={<WishList />} />
 				</Routes>
 				<Footer />

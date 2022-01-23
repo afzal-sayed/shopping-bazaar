@@ -36,7 +36,7 @@ export default class Footer extends Component {
 										<Link to='/About_Us' >About Us</Link>
 									</li>
 									<li>
-										<a href='Contact us.html'>Contact Us</a>
+										<Link to='/ContactUs'>Contact Us</Link>
 									</li>
 									<li>
 										<Link to='/Contribute' >Contribute</Link>
@@ -47,9 +47,9 @@ export default class Footer extends Component {
 								</ul>
 							</div>
 							<div className='col-xs-6 col-md-3'>
-								<a href='/Contact Us'>
+								<Link to='/ContactUs'>
 									<h6>Contact Us</h6>
-								</a>
+								</Link>
 								<ul className='footer-links'>
 									<li>
 										<p>Phone no: <a href='tel:1234'>1234</a></p>
@@ -79,7 +79,7 @@ export default class Footer extends Component {
 									Copyright © 2021 All Rights Reserved by <a href='#'>Shopping Bazaar</a>.
 								</p>
 							</div>
-							<div className='col-md-4 col-sm-6 col-xs-12'>
+							{/* <div className='col-md-4 col-sm-6 col-xs-12'>
 								<ul className='social-icons'>
 									<li>
 										<a className='facebook' href='#'>
@@ -97,7 +97,7 @@ export default class Footer extends Component {
 										</a>
 									</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</footer>

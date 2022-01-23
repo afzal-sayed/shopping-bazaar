@@ -52,7 +52,7 @@ export default class Products extends Component {
                             <img src={mfasion2} alt="mensfashion" />
                             <div className="content">
                                 <h3>Slim Bomber Jacket Male</h3>
-                                <div className="price">Rs. 2000.00 <span>Rs. 2250.00</span></div>
+                                <div className="price"><p>Rs. 2000.00</p> <span>Rs. 2250.00</span></div>
                                 <div className="stars">
                                     <i className="fas fa-star" />
                                     <i className="fas fa-star" />
