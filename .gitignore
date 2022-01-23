@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 .vscode 
+
+#ignored files
+src/.vscode
+
 # testing
 /coverage
 
