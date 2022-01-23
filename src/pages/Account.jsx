@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-import user from '../img/User.png'
+import user from '../img/User.png';
+import bgimge from '../img/bg.png';
 
 
 export default class Account extends Component {
@@ -11,7 +12,7 @@ export default class Account extends Component {
                     <div className="row">
                         <div className="col-lg-4 pb-5">
                             <div className="author-card pb-3">
-                                <div className="author-card-cover" style={{ backgroundImage: 'url(../img/bg.png)' }}>
+                                <div className="author-card-cover" style={{backgroundImage: {bgimge} }}>
                                     <a className="btn btn-style-1 btn-white btn-sm" href="#" data-toggle="tooltip" title data-original-title="You currently have 290 Reward points to spend"><i className="fa fa-award text-md" />&nbsp;290
                                         points</a>
                                 </div>

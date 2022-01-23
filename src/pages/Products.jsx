@@ -4,8 +4,21 @@ import "../Styles/css/styling.css";
 import mfasion1 from '../img/Mens fashion/mfasion1.png'
 import mfasion2 from '../img/Mens fashion/mfashion2.png'
 import shirt from '../img/shirt.png'
-
-
+import mfashion3 from '../img/Mens fashion/trouser1.png'
+import mfashion4 from '../img/Mens fashion/track1.png'
+import mentshirt from '../img/Mens fashion/tshirts.png'
+import wfashion from '../img/Womens fashion/w1.png'
+import wfashion2 from '../img/Womens fashion/w2.png'
+import wfashion3 from '../img/Womens fashion/w3.png'
+import wfashion4 from '../img/Womens fashion/w4.png'
+import wfashion5 from '../img/Womens fashion/w5.png'
+import wfashion6 from '../img/Womens fashion/w6.png'
+import foot1 from '../img/footwears/f1.png'
+import foot2 from '../img/footwears/f2.png'
+import foot3 from '../img/footwears/f3.png'
+import foot4 from '../img/footwears/f4.png'
+import foot5 from '../img/women boots.png'
+import foot6 from '../img/footwears/f6.png'
 export default class Products extends Component {
     render() {
         return (
@@ -18,7 +31,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src={mfasion1} alt="" />
+                            <img src={mfasion1} alt="mensfashiom" />
                             <div className="content">
                                 <h3>DCROOZ full sleeves sweatshirt</h3>
                                 <div className="price">Rs. 1850.00 <span>Rs. 2000.00</span></div>
@@ -36,7 +49,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src={mfasion2} alt="" />
+                            <img src={mfasion2} alt="mensfashion" />
                             <div className="content">
                                 <h3>Slim Bomber Jacket Male</h3>
                                 <div className="price">Rs. 2000.00 <span>Rs. 2250.00</span></div>
@@ -54,7 +67,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src={shirt} alt="" />
+                            <img src={shirt} alt="shirt" />
                             <div className="content">
                                 <h3>Mens travel warm summer </h3>
                                 <div className="price">Rs.750.00 <span>Rs.900.00</span></div>
@@ -72,7 +85,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Mens fashion/trouser1.png" alt="" />
+                            <img src={mfashion3} alt="menstrouser" />
                             <div className="content">
                                 <h3>Men maroon formal trouser</h3>
                                 <div className="price">Rs. 1035.00<span>Rs. 1500.00</span></div>
@@ -90,7 +103,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Mens fashion/track1.png" alt="" />
+                            <img src={mfashion4} alt="mens trouser" />
                             <div className="content">
                                 <h3>Adidas Cotton Tracks</h3>
                                 <div className="price">Rs.1500.00 <span>Rs.2000.00</span></div>
@@ -108,7 +121,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Mens fashion/tshirts.png" alt="" />
+                            <img src={mentshirt} alt="mens tshirt" />
                             <div className="content">
                                 <h3>Cool Mens Tshirts</h3>
                                 <div className="price">Rs.500.00 <span>Rs.650.00</span></div>
@@ -136,7 +149,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Womens fashion/w1.png" alt="" />
+                            <img src={wfashion} alt="womensfashion" />
                             <div className="content">
                                 <h3>Jevi print Unstitched dress</h3>
                                 <div className="price">Rs. 650.00 <span>Rs. 1050.00</span></div>
@@ -154,8 +167,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Womens fashion/w2.png" alt="" />
-                            &lt;<div className="content">
+                            <img src={wfashion2} alt="womensfashioN" />                            &lt;<div className="content">
                                 <h3>Women's BanarsiSilk Gown</h3>
                                 <div className="price">Rs. 800.00 <span>Rs. 1200.00</span></div>
                                 <div className="stars">
@@ -172,7 +184,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Womens fashion/w3.png" alt="" />
+                            <img src={wfashion3} alt="womensFashion" />
                             <div className="content">
                                 <h3>Basic Edition Short Sleeves Tshirts </h3>
                                 <div className="price">Rs.550.00 <span>Rs.700.00</span></div>
@@ -190,7 +202,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Womens fashion/w4.png" alt="" />
+                            <img src={wfashion4} alt="womenFashion" />
                             <div className="content">
                                 <h3>Ladies Kurti</h3>
                                 <div className="price">Rs. 350.00<span>Rs. 600.00</span></div>
@@ -208,7 +220,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Womens fashion/w5.png" alt="" />
+                            <img src={wfashion5} alt="womensFashion" />
                             <div className="content">
                                 <h3>New Flex High Rise Legging</h3>
                                 <div className="price">Rs. 650.00 <span>Rs. 800.00</span></div>
@@ -226,7 +238,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/Womens fashion/w6.png" alt="" />
+                            <img src={wfashion6} alt="womensFahsion" />
                             <div className="content">
                                 <h3>women short frock white</h3>
                                 <div className="price">Rs.900.00 <span>Rs.1100.00</span></div>
@@ -254,7 +266,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/footwears/f1.png" alt="" />
+                            <img src={foot1} alt="footWears" />
                             <div className="content">
                                 <h3>Penilo Fashion Shoes</h3>
                                 <div className="price">Rs.2299.00 <span>Rs.2700.00</span></div>
@@ -272,7 +284,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/footwears/f2.png" alt="" />
+                            <img src={foot2} alt="footWears" />
                             &lt;<div className="content">
                                 <h3>MGZ Stylish Bellies</h3>
                                 <div className="price">Rs. 579.00 <span>Rs. 700.00</span></div>
@@ -290,7 +302,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/footwears/f3.png" alt="" />
+                            <img src={foot3} alt="footWears" />
                             <div className="content">
                                 <h3>3'-4' block heel sandels </h3>
                                 <div className="price">Rs.750.00 <span>Rs.900.00</span></div>
@@ -308,7 +320,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/footwears/f4.png" alt="" />
+                            <img src={foot4} alt="footWears" />
                             <div className="content">
                                 <h3>INF slider flipflop Men</h3>
                                 <div className="price">Rs. 499.00<span>Rs. 600.00</span></div>
@@ -326,7 +338,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/women boots.png" alt="" />
+                            <img src={foot5} alt="footWears" />
                             <div className="content">
                                 <h3>Women's short Boots</h3>
                                 <div className="price">Rs.1990.00 <span>Rs.2500.00</span></div>
@@ -344,7 +356,7 @@ export default class Products extends Component {
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
-                            <img src="../img/footwears/f6.png" alt="" />
+                            <img src={foot6} alt="footWears" />
                             <div className="content">
                                 <h3>Puma Men Grey/Blue Aripon</h3>
                                 <div className="price">Rs.2900.00 <span>Rs.3200.00</span></div>

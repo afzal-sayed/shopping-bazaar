@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import fashion from '../img/mfashion.png'
+import wfashion from '../img/wfashion.png'
+import watch from '../img/watch (2).png'
 
 export default class Category extends Component {
     render() {
@@ -12,7 +15,7 @@ export default class Category extends Component {
                             <div className="card p-1">
                                 <div className="d-flex justify-content-between align-items-center p-2">
                                     <div className="flex-column lh-1 imagename"> <span>Men's</span> <span>Fashion</span> </div>
-                                    <div> <img src="../img/mfashion.png" height={100} width={100} /> </div>
+                                    <div> <img src={fashion} height={100} width={100} /> </div>
                                 </div>
                             </div>
                         </div>
@@ -20,7 +23,7 @@ export default class Category extends Component {
                             <div className="card p-2">
                                 <div className="d-flex justify-content-between align-items-center p-2">
                                     <div className="flex-column lh-1 imagename"> <span>Women's</span> <span>Fashion</span> </div>
-                                    <div> <img src="../img/wfashion.png" height={100} width={100} /> </div>
+                                    <div> <img src={wfashion} height={100} width={100} /> </div>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +31,7 @@ export default class Category extends Component {
                             <div className="card p-2">
                                 <div className="d-flex justify-content-between align-items-center p-2">
                                     <div className="flex-column lh-1 imagename"> <span>Smart</span> <span>Watches</span> </div>
-                                    <div> <img src="../img/watch (2).png" height={100} width={100} /> </div>
+                                    <div> <img src={watch} height={100} width={100} /> </div>
                                 </div>
                             </div>
                         </div>
