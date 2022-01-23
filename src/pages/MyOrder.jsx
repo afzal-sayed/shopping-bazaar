@@ -9,7 +9,7 @@ export default class MyOrder extends Component {
         return (
             <div>
 
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-3">
                             <div className="osahan-account-page-left shadow-sm bg-white h-100">

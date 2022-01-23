@@ -18,7 +18,7 @@ export default class Slider extends Component {
                             <div className="content">
                                 <span>Latest Electronics</span>
                                 <h3>Dell Tablets &amp; Laptops</h3>
-                                <p>If you’re looking to add another computer to your household, here are plenty of refurbished options
+                                <p>If you're looking to add another computer to your household, here are plenty of refurbished options
                                     on sale that will get the job done without breaking the bank. </p>
                                 <a href="#" className="btn">add to cart</a>
                             </div>

@@ -7,7 +7,7 @@ export default class CartScreen extends Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="container-fluid">
                     <h1>Shopping Cart</h1>
                     <div className="cart">
                         <div className="products">

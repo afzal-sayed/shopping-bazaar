@@ -8,7 +8,7 @@ export default class Account extends Component {
     render() {
         return (
             <div>
-                <div className="container mb-4">
+                <div className="container-fluid mb-4">
                     <div className="row">
                         <div className="col-lg-4 pb-5">
                             <div className="author-card pb-3">

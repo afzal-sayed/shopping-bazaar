@@ -7,7 +7,7 @@ export default class Category extends Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="container-fluid">
                     <div className="d-flex justify-content-center mt-3"> <span className="text text-center">Finding Best Products Now<br /> in
                         Your Fingertips</span> </div>
                     <div className="row mt-2 g-4">

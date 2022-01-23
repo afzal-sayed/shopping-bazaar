@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class LoginSignUp extends Component {
     render() {
         return (
-            <div>
+            <div className="contaier-fluid">
                 <div className="wrapper">
                     <div className="title-text">
                         <div className="title login">

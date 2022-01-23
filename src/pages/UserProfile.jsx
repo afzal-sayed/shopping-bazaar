@@ -6,7 +6,7 @@ export default class UserProfile extends Component {
     render() {
         return (
             <div>
-                <div className="container register">
+                <div className="container-fluid register">
                     <div className="row">
                         <div className="col-md-3 register-left">
                             <img src="../img/user2.png" alt="" />
