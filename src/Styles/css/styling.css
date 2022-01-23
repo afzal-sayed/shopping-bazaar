@@ -36,14 +36,12 @@ section {
 
 .btn {
   display: inline-block;
-  margin-top: 1rem;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--black);
   font-weight: bolder;
   color: var(--black);
   cursor: pointer;
   background: #fff;
-  padding: 0.8rem 3rem;
 }
 .btn:hover {
   background: var(--orange);

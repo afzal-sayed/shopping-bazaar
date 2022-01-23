@@ -43,7 +43,7 @@ export default class Header extends Component {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/Contact_us' className="nav-link button">Contact Us</Link>
+                                    <Link to='/ContactUs' className="nav-link button">Contact Us</Link>
 
                                 </li>
                             </ul>

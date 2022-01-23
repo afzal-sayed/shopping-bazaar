@@ -169,7 +169,6 @@
 }
 
 .hambtn {
-  font-size: 1.5em;
   color: black;
 }
 
@@ -314,14 +313,13 @@ section {
 .products .box-container .box img {
   height: 10rem;
   filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
-  margin: 8rem 2rem;
 }
 .products .box-container .box .icons {
   display: flex;
   flex-flow: column;
   position: absolute;
-  top: 0.5rem;
-  left: -10rem;
+  /* top: 0.5rem;
+  left: -10rem; */
 }
 .products .box-container .box:hover .icons {
   left: 1rem;
@@ -343,13 +341,11 @@ section {
 }
 .products .box-container .box .content h3 {
   color: var(--black);
-  font-size: 2.5rem;
 }
 .products .box-container .box .content .price {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bolder;
-  padding: 1rem 0;
 }
 .products .box-container .box .content .price span {
   color: var(--orange);
@@ -399,9 +395,9 @@ section {
 }
 .author-card .author-card-cover > .btn {
   position: absolute;
-  top: 12px;
+  /* top: 12px;
   right: 12px;
-  padding: 0 10px;
+  padding: 0 10px; */
 }
 .author-card .author-card-profile {
   display: table;
@@ -949,8 +945,8 @@ a.list-group-item,
 .order-list .btn {
   border-radius: 2px;
   min-width: 121px;
-  font-size: 13px;
-  padding: 7px 0 7px 0;
+  /*  font-size: 13px;
+  padding: 7px 0 7px 0; */
 }
 
 .osahan-account-page-left .nav-link {
@@ -1128,10 +1124,8 @@ a:hover {
 
 .btnRegister {
   float: right;
-  margin-top: 10%;
   border: none;
   border-radius: 1.5rem;
-  padding: 2%;
   background: #fc5c65;
   color: #fff;
   font-weight: 600;

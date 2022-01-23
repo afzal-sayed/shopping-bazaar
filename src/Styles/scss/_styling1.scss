@@ -43,7 +43,7 @@ section {
 
 .btn {
 	display: inline-block;
-	margin-top: 1rem;
+	// margin-top: 1rem;
 	border-radius: 0.5rem;
 	border: 0.2rem solid var(--black);
 	font-weight: bolder;
@@ -51,7 +51,7 @@ section {
 	color: var(--black);
 	cursor: pointer;
 	background: #fff;
-	padding: 0.8rem 3rem;
+	// padding: 0.8rem 3rem;
 
 	&:hover {
 		background: var(--orange);
