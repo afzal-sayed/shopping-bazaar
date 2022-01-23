@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+
 import user from '../img/User.png';
 import bgimge from '../img/bg.png';
 
@@ -12,7 +13,7 @@ export default class Account extends Component {
                     <div className="row">
                         <div className="col-lg-4 pb-5">
                             <div className="author-card pb-3">
-                                <div className="author-card-cover" style={{backgroundImage: {bgimge} }}>
+                                <div className="author-card-cover" style={{ backgroundImage: { bgimge } }}>
                                     <a className="btn btn-style-1 btn-white btn-sm" href="#" data-toggle="tooltip" title data-original-title="You currently have 290 Reward points to spend"><i className="fa fa-award text-md" />&nbsp;290
                                         points</a>
                                 </div>
@@ -35,7 +36,7 @@ export default class Account extends Component {
                                     < Link to='/MyOrder' className="list-group-item" >
                                         <i className="fa fa-angle-double-right text-muted" /> My Orders
                                     </Link>
-                                    < Link to='/DeliveryAddress' className="list-group-item" >
+                                    < Link to='/Address' className="list-group-item" >
                                         <i className="fa fa-home text-muted" /> My Addresses
                                     </Link>
                                     < Link to='/MyWishList' className="list-group-item" >
@@ -44,7 +45,9 @@ export default class Account extends Component {
                                     < Link to='/Cartscreen' className="list-group-item" >
                                         <i className="fa fa-shopping-cart text-muted" /> My Cart
                                     </Link>
-                                    {/* < Link to='/MyCredit' className="list-group-item" >
+                                    <a className="list-group-item" href="#" >
+                                        <i className="fa fa-sign-out text-muted" aria-hidden="true" />Log Out</a>
+                                    {/* < Link to='/Address' className="list-group-item" >
                                         <i className="fa fa-angle-double-right text-muted" /> My Credit
                                     </Link>
                                     < Link to='/MyCoupon' className="list-group-item" >

@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Footer from "./pages/Footer";
 import Account from "./pages/Account";
 import CartScreen from "./pages/CartScreen";
-import Slider from "./pages/Slider";
 import Category from "./pages/Category";
 import DeliveryAddress from "./pages/DeliveryAddress";
 import LoginSignUp from "./pages/LoginSignUp";
@@ -20,6 +19,7 @@ import Products from "./pages/Products";
 import Reciept from "./pages/Reciept";
 import WishList from "./pages/WishList";
 import ContanctUs from "./pages/ContanctUs";
+import Address from './pages/Address';
 
 function App() {
 	return (
@@ -40,7 +40,8 @@ function App() {
 					<Route path='/Products' element={<Products />} />
 					<Route path='/Reciept' element={<Reciept />} />
 					<Route path='/ContactUs' element={<ContanctUs />} />
-					<Route path='/WIshList' element={<WishList />} />
+					<Route path='/WishList' element={<WishList />} />
+					<Route path='/Address' element={<Address />} />
 				</Routes>
 				<Footer />
 			</Router>

@@ -30,7 +30,17 @@ export default class DeliveryAddress extends Component {
         } */
 
 
+
     render() {
+        /*  let [addresses, setAddres] = useState();
+         let [name, setName] = useState("");
+         let [number, setNumber] = useState();
+         let [town, setTown] = useState("");
+         let [pincode, setPincode] = useState("");
+         let [Region, setRegion] = useState("");
+         let [landmark, setlandmark] = useState("");
+         let [state, setState] = useState("");
+         let [AddressType, setAddressType] = useState(""); */
 
         return (
             <div>
@@ -79,28 +89,19 @@ export default class DeliveryAddress extends Component {
                                         </div>
                                         <div className="col">
                                             <div className="form-outline">
-                                                <input type="email" id="form9Example4" className="form-control input-custom" placeholder="Email" /* onChangep={p => setEmail(p)} */ />
-                                                {/* <p className="errormsg">{emaillog}</p> */}
-                                                {/* <label className="form-label" htmlFor="form9Example4"></label> */}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row mb-4">
-                                        <div className="col">
-                                            <div className="form-outline">
-                                                <input type="text" id="form9Example6" className="form-control input-custom" placeholder="City" />
-                                                {/* <p className="errormsg">{statelog}</p> */}
-                                                {/* <label className="form-label" htmlFor="form9Example6"></label> */}
+                                                <input type="text" id="form9Example6" className="form-control input-custom" placeholder="City" />                                                {/* <p className="errormsg">{emaillog}</p>
+                                                <label className="form-label" htmlFor="form9Example4"></label> */}
                                             </div>
                                         </div>
                                         <div className="col">
                                             <div className="form-outline">
                                                 <input type="text" id="typeEmail" className="form-control input-custom" placeholder="zip" /* onChangep={p => setZip(p)} */ />
-                                                {/* <p className="errormsg">{ziplog}</p> */}
-                                                {/* <label className="form-label" htmlFor="typeEmail"></label> */}
+                                                {/* <p className="errormsg">{emaillog}</p>
+                                                <label className="form-label" htmlFor="form9Example4"></label> */}
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Flat,House no,Building,Company,Aparment *" /* onChangep={p => setHome(p)} */ />
                                         {/* <p className="errormsg">{homelog}</p> */}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
-
+import user2 from '../img/User.png';
 export default class UserProfile extends Component {
     render() {
         return (
@@ -9,7 +9,7 @@ export default class UserProfile extends Component {
                 <div className="container register">
                     <div className="row">
                         <div className="col-md-3 register-left">
-                            <img src="../img/user2.png" alt="" />
+                            <img src={user2} alt="user profile " />
                             <h2>Tazeen shaikh</h2>
                             <p>user's short bio</p>
                         </div>
