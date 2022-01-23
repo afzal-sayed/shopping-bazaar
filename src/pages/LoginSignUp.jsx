@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 
 export default class LoginSignUp extends Component {
     render() {
@@ -15,8 +15,8 @@ export default class LoginSignUp extends Component {
                     </div>
                     <div className="form-container">
                         <div className="slide-controls">
-                            <input type="radio" name="slide" id="login" defaultChecked />
-                            <input type="radio" name="slide" id="signup" />
+                            {/* <input type="radio" name="slide" id="login" defaultChecked />
+                            <input type="radio" name="slide" id="signup" /> */}
                             <label htmlFor="login" className="slide login">Login</label>
                             <label htmlFor="signup" className="slide signup">Signup</label>
                             <div className="slider-tab" />

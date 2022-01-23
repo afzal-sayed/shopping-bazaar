@@ -1176,7 +1176,6 @@ a:hover {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
 }
 .container h1 {
@@ -1311,7 +1310,7 @@ a:hover {
 }
 @media screen and (max-width: 1220px) {
   .container {
-    max-width: 95%;
+    max-width: 100%;
   }
 }
 /* !cartscreen end */

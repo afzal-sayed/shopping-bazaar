@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 export default class ContanctUs extends Component {
     render() {
         return (
+
+            
             <div className='container'>
                 <form>
                     <div className="form-group">
@@ -22,7 +24,7 @@ export default class ContanctUs extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlSelect1">
+                        <label htmlFor="exampleFormControlSelect1 ">
                             Select Your Query
                         </label>
                         <select className="form-control border border-dark" id="exampleFormControlSelect1">
