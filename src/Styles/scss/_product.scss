@@ -6,21 +6,21 @@
 
 	.box {
 		border: 0.1rem solid rgba(0, 0, 0, 0.1);
-		border-radius: 0.5rem;
+		border-radius: 0.8rem;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
 		background: #f9f9f9;
-		flex: 1 1 30rem;
+		// flex: 1 1 30rem;
 
 		.content {
-			padding: 1.5rem;
+			padding: 1rem;
 		}
 
 		img {
-			height: 10rem;
+			height: 12rem;
 			filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
-			// margin: 8rem 2rem;
+			margin: 2rem 2rem;
 		}
 
 		.icons {
@@ -44,7 +44,7 @@
 			border: 0.1rem solid var(--black);
 			border-radius: 0.5rem;
 			background: #fff;
-			margin-top: 0.5rem;
+			// margin-top: 0.5rem;
 
 			&:hover {
 				background: var(--orange);
@@ -60,14 +60,15 @@
 
 			.price {
 				color: var(--black);
-				font-size: 2rem;
-				font-weight: bolder;
+				font-size: 1.5rem;
+				font-weight: bold;
 				// padding: 1rem 0;
 
 				span {
 					color: var(--orange);
 					font-size: 1.5rem;
 					text-decoration: line-through;
+					font-weight: normal;
 				}
 			}
 
@@ -75,7 +76,7 @@
 				padding-bottom: 1rem;
 
 				i {
-					font-size: 1.7rem;
+					font-size: 1rem;
 					color: var(--orange);
 				}
 			}

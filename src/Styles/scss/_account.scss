@@ -6,11 +6,19 @@
 	margin-bottom: 58px;
 }
 
+hr {
+	color: black;
+	height: 1px;
+	opacity: 1;
+}
+
 .author-card {
 	position: relative;
-	padding-bottom: 48px;
+	// padding-bottom: 48px;
 	background-color: #fff;
+	text-decoration: underline;
 	box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
+
 
 	.author-card-cover {
 		position: relative;
@@ -19,6 +27,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+
 
 		&::after {
 			display: block;
@@ -31,7 +40,7 @@
 			opacity: 0.5;
 		}
 
-		>.btn {
+		.btn {
 			position: absolute;
 			/* top: 12px;
 			right: 12px;
@@ -42,10 +51,10 @@
 	.author-card-profile {
 		display: table;
 		position: relative;
-		margin-top: -22px;
+		/* margin-top: -22px;
 		padding-right: 15px;
 		padding-bottom: 16px;
-		padding-left: 20px;
+		padding-left: 20px; */
 		z-index: 5;
 
 		.author-card-avatar,

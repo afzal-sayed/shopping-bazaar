@@ -211,7 +211,7 @@ section {
 	background: #f9f9f9;
 	border: 0.1rem solid rgba(0, 0, 0, 0.1);
 	border-radius: 0.5rem;
-	padding: 2rem;
+	// padding: 2rem;
 
 	.box {
 		text-align: center;
@@ -239,7 +239,7 @@ section {
 .products .box-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.5rem;
+	// gap: 1.5rem;
 
 	.box {
 		border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -248,16 +248,16 @@ section {
 		position: relative;
 		overflow: hidden;
 		background: #f9f9f9;
-		flex: 1 1 30rem;
+		flex: 1 1 20rem;
 
 		.content {
-			padding: 1.5rem;
+			padding: 1rem;
 		}
 
 		img {
 			height: 10rem;
 			filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
-			margin: 8rem 2rem;
+			margin: 2rem 2rem;
 		}
 
 		.icons {
@@ -299,7 +299,7 @@ section {
 				color: var(--black);
 				// font-size: 2.5rem;
 				font-weight: bolder;
-				padding: 1rem 0;
+				padding: 0.5rem 0;
 
 				span {
 					color: var(--orange);

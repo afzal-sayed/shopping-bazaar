@@ -4,18 +4,18 @@ export default class ContanctUs extends Component {
     render() {
         return (
 
-            
-            <div className='container'>
-                <form>
-                    <div className="form-group">
-                        <label htmlFor="exampleFormControlInput1">Email address</label>
+
+            <div className='container g-5 mt-5 pb-5'>
+                <form className='g-5'>
+                    <div className="form-group ">
+                        <label htmlFor="exampleFormControlInput1">Email address:</label>
                         <input
                             type="email"
                             className="form-control border border-dark"
                             id="exampleFormControlInput1"
                             placeholder="name@example.com"
                         />
-                        <label htmlFor="exampleFormControlInput1">Name</label>
+                        <label htmlFor="exampleFormControlInput1">Name:</label>
                         <input
                             type="text"
                             className="form-control border border-dark"
@@ -44,7 +44,7 @@ export default class ContanctUs extends Component {
                             defaultValue={""}
                         />
                     </div>
-                    <button className="btn btn-success">Submit</button>
+                    <button className="btn btn-success ">Submit</button>
                 </form>
             </div>
         )

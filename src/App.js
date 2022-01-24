@@ -20,6 +20,7 @@ import Reciept from "./pages/Reciept";
 import WishList from "./pages/WishList";
 import ContanctUs from "./pages/ContanctUs";
 import Address from './pages/Address';
+import SignUp from "./pages/SignUp";
 
 function App() {
 	return (
@@ -36,6 +37,7 @@ function App() {
 					<Route path='/LoginSignUp' element={<LoginSignUp />} />
 					<Route path='/MyOrder' element={<MyOrder />} />
 					<Route path='/UserProfile' element={<UserProfile />} />
+					<Route path='/SignUp' element={<SignUp />} />
 					<Route path='/OrderPlaced' element={<OrderPlaced />} />
 					<Route path='/Products' element={<Products />} />
 					<Route path='/Reciept' element={<Reciept />} />

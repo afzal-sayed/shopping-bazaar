@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Header extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div >
                 <nav className="d-flex-md navbar navbar-expand-md  navbar-dark navclr">
                     <div className="container-fluid">
                         <Link to='/' className="navbar-brand logosize">Shopping Bazaar</Link>
