@@ -30,7 +30,7 @@ export default class Account extends Component {
                             </div><hr />
                             <div className="wizard container-fluid">
                                 <nav className="list-group list-group-flush">
-                                    < Link to='/SignUp' className="list-group-item" >
+                                    < Link to='/UserProfile' className="list-group-item" >
                                         <i className="fa fa-user text-muted" /> My Account
                                     </Link>
                                     < Link to='/MyOrder' className="list-group-item" >
