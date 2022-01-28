@@ -24,7 +24,7 @@ import SignUp from "./pages/SignUp";
 
 function App() {
 	return (
-		<div>
+		<div className="">
 			<Router>
 				<Header />
 				<Routes>
