@@ -5,7 +5,7 @@ export default class Header extends Component {
     render() {
         return (
             <div >
-                <nav className="d-flex-md navbar navbar-expand-md  navbar-dark navclr">
+                <nav className="d-flex-md navbar navbar-expand-md  navbar-dark navclr bg-gradient">
                     <div className="container-fluid">
                         <Link to='/' className="navbar-brand logosize">Shopping Bazaar</Link>
                         <button className="navbar-toggler hambutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +17,10 @@ export default class Header extends Component {
                                     <Link to='/' className="nav-link active" aria-current="page">Home</Link>
                                 </li>
                                 <li className="nav-item ">
-                                    <Link to='/Products' className="nav-link button">Products</Link>
+                                    <Link to='/Products' className="nav-link ">Products</Link>
                                 </li>
                                 <li className="nav-item dropdown dropdown-toggle-split">
-                                    <Link to='/Cartegory' className="nav-link dropdown-toggle button" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <Link to='/Cartegory' className="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Categories
                                     </Link>
                                     <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -43,13 +43,13 @@ export default class Header extends Component {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/ContactUs' className="nav-link button">Contact Us</Link>
+                                    <Link to='/ContactUs' className="nav-link ">Contact Us</Link>
 
                                 </li>
                             </ul>
                             <form className="d-flex">
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="button btn-outline-primary " type="submit">Search</button>
+                                <button className="button1 btn btn-outline-primary " type="submit">Search</button>
                             </form>
                             <div className="icons">
                                 <Link to='/WishList' className="fas fa-heart" />

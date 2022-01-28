@@ -30,7 +30,7 @@ section {
   color: var(--orange);
 }
 
-.btn {
+.button1 {
   display: inline-block;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--black);
@@ -39,7 +39,7 @@ section {
   cursor: pointer;
   background: #fff;
 }
-.btn:hover {
+.button1:hover {
   background: var(--orange);
   color: #fff;
 }

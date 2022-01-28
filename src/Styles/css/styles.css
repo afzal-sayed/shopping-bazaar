@@ -163,6 +163,7 @@
 /* !header */
 .navclr {
   background-color: rgba(15, 51, 255, 0.8);
+  font: bold;
 }
 
 .logosize {
@@ -175,6 +176,10 @@
 
 /* !header end */
 /* !slider start */
+.slidHeight {
+  min-height: 60vh;
+}
+
 .home {
   padding: 0;
   position: relative;
@@ -1508,9 +1513,15 @@ a:hover {
 }
 /* ! Up End */
 .errormsg {
-  color: red;
+  color: #dc3545;
   font-size: 12px;
   font-weight: bold;
+}
+
+hr {
+  background-color: #dc3545;
+  width: 100%;
+  height: 1px;
 }
 
 /*# sourceMappingURL=styles.css.map */
