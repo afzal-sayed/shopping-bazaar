@@ -70,7 +70,7 @@ export default class Footer extends Component {
 								</p>
 							</div>
 						</div>
-						<hr />
+						<hr className='hrblack' />
 					</div>
 					<div className='container'>
 						<div className='row'>

@@ -27,7 +27,8 @@ export default class Account extends Component {
                                             December 06, 2021</span>
                                     </div>
                                 </div>
-                            </div><hr />
+                            </div>
+                            <hr className="hrblack" />
                             <div className="wizard container-fluid">
                                 <nav className="list-group list-group-flush">
                                     < Link to='/UserProfile' className="list-group-item" >

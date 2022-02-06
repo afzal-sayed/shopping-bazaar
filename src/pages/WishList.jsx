@@ -5,10 +5,10 @@ import fruit4 from "../img/fruit4.png"
 export default class WishList extends Component {
     render() {
         return (
-            <div>
-                <div>
-                    <h1>My Wishlist</h1>
+            <div className="container">
+                <div className="container-fluid d-flex justify-content-center">
                     <div className="col-lg-8 pb-5">
+                        <h1>My Wishlist</h1> <hr />
                         {/* Item*/}
                         <div className="cart-item d-md-flex justify-content-between"><span className="remove-item"><i className="fa fa-times" /></span>
                             <div className="px-3 my-3">
