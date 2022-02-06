@@ -1,56 +1,58 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 class SignUp extends React.Component {
     handlesignup(e) {
         e.preventDefault();
-        let mail = document.forms["signup-form"]["email"].value;
-        let name = document.forms["signup-form"]["Name"].value;
-        let password = document.forms["signup-form"]["psw"].value;
-        let repeat = document.forms["signup-form"]["psw-repeat"].value;
-        let warn = document.getElementById("signupwarningbox");
-        const pat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-        if (mail == "" || name == "" || password == "") {
-            warn.innerHTML = "Please fill all the Details";
-            //idhr pr batana user ko ki mail ya to name yato password khali hai bharne usko
-        } else if (password.length < 8) {
-            warn.innerHTML = "Password too short minimum 8 charachters required";
-            //idhr user ko bolna password ki length 8 se kam nhi chahiye
-        } else if (!pat.test(mail)) {
-            ///idhr user ko bata mail sahi nhi hai
-            warn.innerHTML = "Please enter a valid email";
-        } else if (password != repeat) {
-            warn.innerHTML = "Passwords not matching please correct it!";
-        } else {
-            const instance = axios.create({
-                baseURL: "http://192.168.0.112:8000",
-                timeout: 1000,
-            });
-            console.log(
-                "name" + " " + name + " " + "email" + " " + mail + " " + "password" + password,
-            );
-            let config = {
-                data: {
-                    name: name,
-                    email: mail,
-                    password: password,
-                },
-            };
-            instance.post("/users/", config).then(function (response) {
-                console.log(response.data);
-                if ((response.status = 200)) {
-                    alert("signup success");
-                }
-                if (response.status >= 400 && response.status < 500) {
-                    alert("bad request");
-                }
-            });
-        }
     }
     render() {
         return (
-            <div>
-
+            <div className="backbg">
+                <div className="container d-flex justify-content-center g-0  pb-5 pt-5">
+                    <div className="contaier-fluid">
+                        <div className="wrapper">
+                            <div className="title-text">
+                                <div className="title login">
+                                    Login Form
+                                </div>
+                                <div className="title signup">
+                                    Signup Form
+                                </div>
+                            </div>
+                            <div className="form-container">
+                                <div className="slide-controls">
+                                    <input type="radio" name="slide" id="login" />
+                                    <input type="radio" name="slide" id="signup" defaultchecked />
+                                    <Link to="/UserProfile" className="slide signup">
+                                        <label htmlFor="login" className="slide login">Login</label>
+                                    </Link>
+                                    <Link to="/UserProfile" className="slide signup">
+                                        <label htmlFor="signup" className="slide signup">Signup</label>
+                                    </Link>
+                                    <div className="slider-tab" />
+                                </div>
+                                <div className="form-inner">
+                                    <form action="#" className="signup">
+                                        <div className="field">
+                                            <input type="text" placeholder="Email Address" required />
+                                        </div>
+                                        <div className="field">
+                                            <input type="password" placeholder="Password" required />
+                                        </div>
+                                        <div className="field">
+                                            <input type="password" placeholder="Confirm password" required />
+                                        </div>
+                                        <div className="field btn">
+                                            <div className="btn-layer" />
+                                            <input type="submit" defaultValue="Signup" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

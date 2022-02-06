@@ -1,6 +1,7 @@
+@import "utilities/elements";
+@import "utilities/colors";
 @import "footer";
 @import "header";
-@import "colors";
 @import "slider";
 @import "product";
 @import "account";
@@ -9,6 +10,7 @@
 @import "cartScreen";
 @import "deliveryAddress";
 @import "signUp";
+@import "loginSignup";
 
 
 .errormsg {
@@ -17,9 +19,12 @@
     font-weight: bold;
 }
 
+/* 
 hr {
+
     background-color: $red;
 
     width: 100%;
     height: 1px;
-}
+    top: 10;
+} */

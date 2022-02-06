@@ -112,7 +112,7 @@ export default class Products extends Component {
 
                     <h1 className="heading"> Women's <span> Fashion</span> </h1><hr />
                     <div className="box-container">
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -123,7 +123,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -133,7 +133,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -144,7 +144,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -155,7 +155,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -166,7 +166,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -183,7 +183,7 @@ export default class Products extends Component {
 
                     <h1 className="heading"> Fashion <span> Footwears</span> </h1><hr />
                     <div className="box-container">
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -194,7 +194,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -205,7 +205,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -216,7 +216,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -227,7 +227,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -238,7 +238,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -255,7 +255,7 @@ export default class Products extends Component {
 
                     <h1 className="heading"> Mobiles &amp; <span> Electronics</span> </h1><hr />
                     <div className="box-container">
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -266,7 +266,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -277,7 +277,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -288,7 +288,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -299,7 +299,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -310,7 +310,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -327,7 +327,7 @@ export default class Products extends Component {
 
                     <h1 className="heading"> Fruits &amp; <span> Vegetables</span> </h1><hr />
                     <div className="box-container">
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -338,7 +338,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -349,7 +349,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -360,7 +360,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -371,7 +371,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>
@@ -382,7 +382,7 @@ export default class Products extends Component {
                                 <a href="#" className="btn button1">add to cart</a>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box  border border-dark">
                             <div className="icons">
                                 <a href="#" className="fas fa-heart" />
                             </div>

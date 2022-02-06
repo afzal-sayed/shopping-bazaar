@@ -44,7 +44,7 @@ export default class ContanctUs extends Component {
                             defaultValue={""}
                         />
                     </div>
-                    <button className="btn btn-success ">Submit</button>
+                    <button className="btn btn-success w-25">Submit</button>
                 </form>
             </div>
         )

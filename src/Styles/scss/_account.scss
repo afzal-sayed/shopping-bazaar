@@ -1,3 +1,5 @@
+@import "utilities/colors";
+
 .h1 {
 	text-align: center;
 }
@@ -6,16 +8,11 @@
 	margin-bottom: 58px;
 }
 
-hr {
-	color: black;
-	height: 1px;
-	opacity: 1;
-}
 
 .author-card {
 	position: relative;
 	// padding-bottom: 48px;
-	background-color: #fff;
+	background-color: $white;
 	text-decoration: underline;
 	box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
 
@@ -109,14 +106,14 @@ hr {
 		.author-card-social-bar {
 			display: table;
 			margin: auto;
-			background-color: #fff;
+			background-color: $white;
 			box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
 		}
 	}
 }
 
 .btn-style-1.btn-white {
-	background-color: #fff;
+	background-color: $white;
 }
 
 .list-group-item i {
@@ -134,7 +131,7 @@ hr {
 
 .list-group-item.active:not(.disabled) {
 	border-color: #e7e7e7;
-	background: #fff;
+	background: $white;
 	color: #ac32e4;
 	cursor: default;
 	pointer-events: none;
@@ -157,7 +154,7 @@ hr {
 .list-group-item {
 	&.active {
 		z-index: 2;
-		color: #fff;
+		color: $white;
 		background-color: #007bff;
 		border-color: #007bff;
 	}
@@ -192,7 +189,7 @@ a.list-group-item,
 	display: block;
 	padding: 0.75rem 1.25rem;
 	margin-bottom: -1px;
-	background-color: #fff;
+	background-color: $white;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -278,7 +275,7 @@ a.list-group-item,
 	.product-buttons {
 		display: table;
 		margin: auto;
-		background-color: #fff;
+		background-color: $white;
 		box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
 	}
 
@@ -309,7 +306,7 @@ a.list-group-item,
 
 			&:hover {
 				background-color: #ac32e4;
-				color: #fff;
+				color: $white;
 			}
 		}
 	}
@@ -437,7 +434,7 @@ a.list-group-item,
 				width: 94px;
 				transition: all 0.25s;
 				border: 1px solid transparent;
-				background-color: #fff;
+				background-color: $white;
 				opacity: 0.75;
 			}
 
@@ -490,7 +487,7 @@ a.list-group-item,
 	position: relative;
 	margin-bottom: 30px;
 	padding: 0 50px 0 10px;
-	background-color: #fff;
+	background-color: $white;
 	box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
 
 	.cart-item-label {
@@ -612,7 +609,7 @@ a.list-group-item,
 		position: relative;
 		margin-bottom: 10px;
 		padding: 13px 12px 18px;
-		background-color: #fff;
+		background-color: $white;
 		text-align: center;
 		box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
 
@@ -655,7 +652,7 @@ a.list-group-item,
 	padding-left: 1px;
 	border-radius: 50%;
 	background-color: #ff5252;
-	color: #fff;
+	color: $white;
 	line-height: 23px;
 	text-align: center;
 	box-shadow: 0 3px 12px 0 rgba(255, 82, 82, 0.5);
