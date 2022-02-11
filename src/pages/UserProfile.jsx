@@ -15,30 +15,30 @@ export default class UserProfile extends Component {
                             <p>user's short bio</p>
                         </div>
                         <div className="col-md-9 register-right">
-                            <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            {/* <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
                                 <li className="nav-item">
                                     <Link to="/UserProfile" className="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Signup</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/LoginSignUp" className="nav-link" id="profile-tab" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">Login</Link>
                                 </li>
-                            </ul>
+                            </ul> */}
                             <div className="tab-content" id="myTabContent">
                                 <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <h3 className="register-heading">My Profile</h3>
-                                    <div className="row register-form">
-                                        <div className="col-md-6">
-                                            <div className="form-group">
+                                    <h3 className="register-heading"><u>My Profile</u></h3>
+                                    <div className="row register-form d-flex">
+                                        <div className="col-md-6 ">
+                                            <div className="form-group ">
                                                 <input type="text" className="form-control" placeholder="First Name *" />
                                             </div>
                                             <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Last Name *" />
+                                                <input type="email" className="form-control" placeholder="Your Email *" />
                                             </div>
                                             <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Flat,House no,Building,Company,Aparment *" />
+                                                <input type="text" className="form-control" placeholder="Flat, House no, Building, Company, Aparment *" />
                                             </div>
                                             <div className="form-group">
-                                                <input type="text" className="form-control" placeholder="Area,Colony,Street,Sector,Village " />
+                                                <input type="text" className="form-control" placeholder="Area, Colony, Street, Sector, Village " />
                                             </div>
                                             <div className="form-group">
                                                 <input type="text" className="form-control" placeholder="LandMark" />
@@ -46,29 +46,13 @@ export default class UserProfile extends Component {
                                             <div className="form-group">
                                                 <input type="text" className="form-control" placeholder="Town/City *" />
                                             </div>
-                                            <div className="form-group">
-                                                <div className="maxl">
-                                                    <label className="radio inline">
-                                                        <input type="radio" name="gender" defaultChecked />
-                                                        <span> Male </span>
-                                                    </label>
-                                                    <label className="radio inline">
-                                                        <input type="radio" name="gender" />
-                                                        <span>Female </span>
-                                                    </label>
-                                                    {/* <input type="radio" name="gender" value="male" />
-                                                    <input type="radio" name="gender" value="" /> */}
-
-
-                                                </div>
-                                            </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-6 ">
                                             <div className="form-group">
-                                                <input type="email" className="form-control" placeholder="Your Email *" />
+                                                <input type="text" className="form-control" placeholder="Last Name *" />
                                             </div>
                                             <div className="form-group">
-                                                <input type="text" minLength={10} maxLength={10} name="txtEmpPhone" className="form-control" placeholder="Your Phone *" />
+                                                <input type="tel" minLength={10} maxLength={10} name="txtEmpPhone" className="form-control" placeholder="Your Phone *" />
                                             </div>
                                             <div className="form-group">
                                                 <select className="form-control">
@@ -117,16 +101,30 @@ export default class UserProfile extends Component {
                                                     <option>Puducherry</option>
                                                 </select>
                                             </div>
-                                            <input type="text" maxLength={6} minLength={6} className="form-control" placeholder="Pincode *" />
+                                            <div className="form-group">
+                                                <input type="tel" maxLength={6} minLength={6} className="form-control" placeholder="Pincode *" />
+                                            </div>
+                                            <div className="form-group">
+                                                <select className="form-control">
+                                                    <option className="hidden" selected disabled>Select Gender
+                                                    </option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Others</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <input type="submit" className="btnRegister btn btn-gradient" value="Register" />
+                                        <input type="submit" className="btnRegister btn btn-gradient mt-3 d-flex justify-content-center" value="Register" />
+                                        <div className="d-flex justify-content-end">
+                                            <span>Already have an Account? <Link to="/LoginSignUp"> Click here </Link></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
         )
     }

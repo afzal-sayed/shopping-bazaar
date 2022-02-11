@@ -40,7 +40,7 @@ export default class Account extends Component {
                                     < Link to='/Address' className="list-group-item" >
                                         <i className="fa fa-home text-muted" /> My Addresses
                                     </Link>
-                                    < Link to='/MyWishList' className="list-group-item" >
+                                    < Link to='/WishList' className="list-group-item" >
                                         <i className="fa fa-heart text-muted" /> My Wishlist
                                     </Link>
                                     < Link to='/Cartscreen' className="list-group-item" >

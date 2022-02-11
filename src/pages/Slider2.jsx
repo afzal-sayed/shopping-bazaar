@@ -23,7 +23,7 @@ export default class Slider2 extends Component {
                             <div className="carousel-caption d-none d-md-block bg-dark bg-gradient bg-linear bg-opacity-25">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
-                                <button className="btn border border-primary text-light  bg-gradient">Click to know more</button>
+                                <button className="btn border border-primary text-light btn-primary bg-gradient">Click to know more</button>
                             </div>
                         </div>
                         <div className="carousel-item ">

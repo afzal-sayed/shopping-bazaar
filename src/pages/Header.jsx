@@ -47,17 +47,15 @@ export default class Header extends Component {
 
                                 </li>
                             </ul>
-                            <form className="d-flex">
+                            <form className="d-flex justify-content-end">
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                                 <button className="button1 btn btn-outline-primary " type="submit">Search</button>
                             </form>
-                            <div className="icons">
-                                <Link to='/WishList' className="fas fa-heart" />
-                                <Link to='/Cartscreen' className="fas fa-shopping-cart" />
-                                <Link to='/Account' className="fas fa-user" />
-
+                            <div className="icon d-flex justify-content-center ">
+                                <Link to='/WishList' className="fas fa-heart p-2 " />
+                                <Link to='/Cartscreen' className="fas fa-shopping-cart p-2" />
+                                <Link to='/Account' className="fas fa-user p-2 " />
                             </div>
-
                         </div>
                     </div>
                 </nav >

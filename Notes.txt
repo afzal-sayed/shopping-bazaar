@@ -1,0 +1,10 @@
+page / work remain to edit:
+
+1. order page 
+2. logout icon 
+3. login sign up btn
+4. nav icons - done 
+5. userprofile add "already have account? login"
+6. userprofile add radio btn for gender 
+7. modal for opt
+8. 
