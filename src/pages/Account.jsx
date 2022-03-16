@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-
+import {mainBackend} from "./MainBackend"
 import user from '../img/User.png';
 import bgimge from '../img/bg.png';
 
 
 export default class Account extends Component {
+    logout(){
+        let token = localStorage.getItem("login_token")
+        mainBackend.post("/user/logout/",{},{headers:{Authorization : "Token "+token}})
+        .then((response)=>{
+            if (response.status == 200){
+                localStorage.clear()
+                window.location.href="/"
+            }
+        })
+    }
     render() {
+        let First_name = localStorage.getItem("First_name");
+        let Second_Name = localStorage.getItem("Second_Name");
+        let Photo = localStorage.getItem("Photo");
         return (
             <div>
                 <div className="container mb-4 pb-3 g-5 mt-3">
@@ -20,11 +33,10 @@ export default class Account extends Component {
                                 </div> */}
                                 <div className="author-card-profile ">
                                     <div className="author-card-avatar">
-                                        <img src={user} alt="Tazeen" />
+                                        <img src={Photo==null?user:Photo} alt="Tazeen" />
                                     </div>
                                     <div className="author-card-details">
-                                        <h5 className="author-card-name text-lg">Tazeen Shaikh</h5><span className="author-card-position">Joined
-                                            December 06, 2021</span>
+                                        <h5 className="author-card-name text-lg">{First_name} {Second_Name}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +58,7 @@ export default class Account extends Component {
                                     < Link to='/Cartscreen' className="list-group-item" >
                                         <i className="fa fa-shopping-cart text-muted" /> My Cart
                                     </Link>
-                                    <a className="list-group-item" href="#" >
+                                    <a onClick={this.logout} className="list-group-item" href="#" >
                                         <i className="fa fa-sign-out text-muted" />Log Out</a>
                                     {/* < Link to='/Address' className="list-group-item" >
                                         <i className="fa fa-angle-double-right text-muted" /> My Credit

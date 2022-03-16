@@ -179,8 +179,12 @@ hr {
 /* *end footer */
 /* !header */
 .navclr {
-  background-color: #0f33ffcc;
-  font: bold;
+  background: #fc5c65;
+  font-weight: 600;
+  color: #fff !important;
+}
+.navclr .logosize {
+  font-size: 1.5em;
 }
 
 .logosize {
@@ -189,6 +193,13 @@ hr {
 
 .hambtn {
   color: #000;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+  color: aliceblue;
+  font-size: larger;
 }
 
 /* !header end */
