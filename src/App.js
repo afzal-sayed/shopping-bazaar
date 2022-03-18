@@ -12,7 +12,6 @@ import Category from "./pages/Category";
 import DeliveryAddress from "./pages/DeliveryAddress";
 import LoginSignUp from "./pages/LoginSignUp";
 import MyOrder from "./pages/MyOrder";
-import FeaturedProduct from "./pages/FeaturedProduct.Jsx";
 import UserProfile from "./pages/UserProfile";
 import OrderPlaced from "./pages/OrderPlaced";
 import Products from "./pages/Products";
@@ -23,6 +22,7 @@ import Address from './pages/Address';
 import SignUp from "./pages/SignUp";
 import GetAccount from "./pages/getAccount";
 import Searched from "./pages/searchpage";
+import FeaturedProduct from "./pages/FeaturedProduct.Jsx";
 
 function App() {
 	return (
@@ -41,7 +41,7 @@ function App() {
 					<Route path='/UserProfile' element={<UserProfile />} />
 					<Route path='/SignUp' element={<SignUp />} />
 					<Route path='/OrderPlaced' element={<OrderPlaced />} />
-					<Route path='/Products' element={<Products />} />					
+					<Route path='/Products' element={<Products />} />
 					<Route path='/Search/:search' element={<Searched />} />
 					<Route path='/Reciept' element={<Reciept />} />
 					<Route path='/ContactUs' element={<ContanctUs />} />
