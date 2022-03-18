@@ -1,4 +1,4 @@
-// import React, { Component } from "react";
+import React, { Component } from "react";
 import * as axios from 'axios';
 import config from '../config.json';
 

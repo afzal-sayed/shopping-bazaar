@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { mainBackend } from "./MainBackend";
 
-export default class Header extends Component {
-    render() {
+    
+function Header() {
+    let search = React.useRef()
+
+    function handleClick(e){
+        e.preventDefault()
+        console.log(search.current.value)
+        window.location.href='/Search/'+search.current.value;
+    }
+
         return (
             <div >
-                <nav className="d-flex-md navbar navbar-expand-md  navbar-dark navclr bg-gradient">
+                <nav className="d-flex-md navbar navbar-expand-lg  navbar-dark navclr bg-gradient">
                     <div className="container-fluid">
                         <Link to='/' className="navbar-brand logosize">Shopping Bazaar</Link>
                         <button className="navbar-toggler hambutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,9 +56,9 @@ export default class Header extends Component {
 
                                 </li>
                             </ul>
-                            <form className="d-flex justify-content-end">
-                                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="button1 btn btn-outline-primary " type="submit">Search</button>
+                            <form className="d-flex justify-content-end" onSubmit={handleClick}>
+                                <input className="form-control me-2" type="text" ref={search} placeholder="Search" aria-label="Search" />
+                                <button className="button1 btn btn-outline-primary "  type="submit">Search</button>
                             </form>
                             <div className="icon d-flex justify-content-center ">
                                 <Link to='/WishList' className="fas fa-heart p-2 " />
@@ -64,4 +73,5 @@ export default class Header extends Component {
 
         );
     }
-}
+
+    export default Header;

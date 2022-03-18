@@ -17,7 +17,7 @@ function Card (data){
         <img src={image} alt="mensfashiom" />
         <div className="content">
             <h3>{dat.Name}</h3>
-            <div className="price">Rs. {dat.Price} </div>
+            <div className="price">Rs. {dat.Price}</div>
             <a href="#" className="btn button1">add to cart</a>
         </div>
     </div>

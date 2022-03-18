@@ -31,50 +31,50 @@ import cabbage from '../img/fruits & vegetables/v3.png'
 import sweet from '../img/fruits & vegetables/v4.png'
 import green from '../img/fruits & vegetables/v5.png'
 import apples from '../img/fruits & vegetables/v6.png'
-import {mainBackend} from "./MainBackend"
+import { mainBackend } from "./MainBackend"
 
 
 
-function Card (data){
+function Card(data) {
     let dat = data.data
 
-    let image = dat.Display_Image.startsWith("data:image") ? dat.Display_Image : "data:image/png;base64,"+dat.Display_Image
+    let image = dat.Display_Image.startsWith("data:image") ? dat.Display_Image : "data:image/png;base64," + dat.Display_Image
     return (
         <div className="box border border-dark">
-        <div className="icons">
-            <a href="#" className="fas fa-heart" />
+            <div className="icons">
+                <a href="#" className="fas fa-heart" />
+            </div>
+            <img src={image} alt="mensfashiom" />
+            <div className="content">
+                <h3>{dat.Name}</h3>
+                <div className="price">Rs. {dat.Price}</div>
+                <a href="#" className="btn button1">add to cart</a>
+            </div>
         </div>
-        <img src={image} alt="mensfashiom" />
-        <div className="content">
-            <h3>{dat.Name}</h3>
-            <div className="price">Rs. {dat.Price}</div>
-            <a href="#" className="btn button1">add to cart</a>
-        </div>
-    </div>
     )
 }
 
 export default class Products extends Component {
-    categories = ["Hygiene","Groceries","Fashion","Electronic"]
-    categorie_num = {Electronic:1,Fashion:2,Groceries:3,Hygiene:4}
+    categories = ["Hygiene", "Groceries", "Fashion", "Electronic"]
+    categorie_num = { Electronic: 1, Fashion: 2, Groceries: 3, Hygiene: 4 }
     state = {};
-// Electronic 1
-	// Fashion 2
-	// Groceries 3
-	// Hygiene 4
+    // Electronic 1
+    // Fashion 2
+    // Groceries 3
+    // Hygiene 4
 
 
 
 
-    getAllData(){
-    this.categories.map((categorie)=>{
-        mainBackend.get("/store/getSortItems/",{params:{categories:this.categorie_num[categorie]}})
-        .then((response)=>{this.setState({[categorie]:response.data.results})})
-    })
+    getAllData() {
+        this.categories.map((categorie) => {
+            mainBackend.get("/store/getSortItems/", { params: { categories: this.categorie_num[categorie] } })
+                .then((response) => { this.setState({ [categorie]: response.data.results }) })
+        })
     }
 
-    componentDidMount(){
-        
+    componentDidMount() {
+
         this.getAllData()
     }
 
@@ -87,31 +87,31 @@ export default class Products extends Component {
 
                     <h1 className="heading"> Electronic </h1><hr />
                     <div className="box-container ">
-                        {this.state.Electronic != null?this.state.Electronic.slice(0,6).map((elemnt)=> <Card data={elemnt} key={elemnt.Name} /> ):<p>no prod available</p> }
+                        {this.state.Electronic != null ? this.state.Electronic.slice(0,).map((elemnt) => <Card data={elemnt} key={elemnt.Name} />) : <p>no prod available</p>}
                     </div>
                 </section>
-                
+
                 <section className="products" id="products">
                     <h1 className="heading"> Fashion </h1><hr />
                     <div className="box-container">
-                    {this.state.Fashion != null?this.state.Fashion.slice(0,6).map((elemnt)=> <Card data={elemnt} key={elemnt.Name} /> ):<p>no prod available</p> }
+                        {this.state.Fashion != null ? this.state.Fashion.slice(0,).map((elemnt) => <Card data={elemnt} key={elemnt.Name} />) : <p>no prod available</p>}
                     </div>
                 </section>
 
                 <section className="products" id="products">
                     <h1 className="heading"> Groceries </h1><hr />
                     <div className="box-container">
-                    {this.state.Groceries != null?this.state.Groceries.slice(0,6).map((elemnt)=> <Card data={elemnt} key={elemnt.Name} /> ):<p>no prod available</p> }
+                        {this.state.Groceries != null ? this.state.Groceries.slice(0,).map((elemnt) => <Card data={elemnt} key={elemnt.Name} />) : <p>no prod available</p>}
                     </div>
                 </section>
 
                 <section className="products" id="products">
                     <h1 className="heading"> Hygiene </h1><hr />
                     <div className="box-container">
-                    {this.state.Hygiene != null?this.state.Hygiene.slice(0,6).map((elemnt)=> <Card data={elemnt} key={elemnt.Name} /> ):<p>no prod available</p> }
+                        {this.state.Hygiene != null ? this.state.Hygiene.slice(0,).map((elemnt) => <Card data={elemnt} key={elemnt.Name} />) : <p>no prod available</p>}
                     </div>
                 </section>
-               
+
             </div>
         )
     }

@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-import { mainBackend } from "./MainBackend"
+import {mainBackend} from "./MainBackend"
 import user from '../img/User.png';
 import bgimge from '../img/bg.png';
 
 
 export default class Account extends Component {
-    logout() {
+    logout(){
         let token = localStorage.getItem("login_token")
-        mainBackend.post("/user/logout/", {}, { headers: { Authorization: "Token " + token } })
-            .then((response) => {
-                if (response.status == 200) {
-                    localStorage.clear()
-                    window.location.href = "/"
-                }
-            })
+        mainBackend.post("/user/logout/",{},{headers:{Authorization : "Token "+token}})
+        .then((response)=>{
+            if (response.status == 200){
+                localStorage.clear()
+                window.location.href="/"
+            }
+        })
     }
     render() {
         let First_name = localStorage.getItem("First_name");
@@ -33,7 +33,7 @@ export default class Account extends Component {
                                 </div> */}
                                 <div className="author-card-profile ">
                                     <div className="author-card-avatar">
-                                        <img src={Photo == null ? user : Photo} alt="Tazeen" />
+                                        <img src={Photo==null?user:Photo} alt={First_name} />
                                     </div>
                                     <div className="author-card-details">
                                         <h5 className="author-card-name text-lg">{First_name} {Second_Name}</h5>

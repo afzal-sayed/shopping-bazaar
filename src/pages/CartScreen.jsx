@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import shoe3 from "../img/shoe3.png";
 import tshirt2 from '../img/tshirt2.png';
-import { mainBackend } from "./MainBackend"
+import {mainBackend} from "./MainBackend"
 
-function Card({ item }) {
-    let image = item.Items_ID.Display_Image.startsWith("data:image/png;base64,") ? item.Items_ID.Display_Image : "data:image/png;base64," + item.Items_ID.Display_Image;
+function Card({item}){
+    let image = item.Items_ID.Display_Image.startsWith("data:image/png;base64,") ?item.Items_ID.Display_Image :"data:image/png;base64,"+item.Items_ID.Display_Image;
     return (
-
+      
         <div className="product d-flex justify-content-between ">
             <div className=" h-100 ">
                 <img src={image} className="img-responsive img w-100" />
@@ -15,7 +15,7 @@ function Card({ item }) {
                 <h3 className="product-name">{item.Items_ID.Name}</h3>
                 <h4 className="product-price">Rs. {item.Items_ID.Price}</h4>
                 <h4 className="product-offer">50%</h4>
-                <p className="product-quantity">Qnt: <input defaultValue={1} />
+                <p className="product-quantity">Qnt: <input defaultValue={1}  />
                 </p><p className="product-remove">
                     <i className="fa fa-trash" aria-hidden="true" />
                     <span className="remove">Remove</span>
@@ -26,48 +26,48 @@ function Card({ item }) {
 }
 
 function CartScreen() {
-    let [cartItems, setCartItems] = React.useState([])
+    let [cartItems,setCartItems] = React.useState([])
 
-    React.useEffect(() => {
+    React.useEffect(()=>{
         let token = localStorage.getItem("login_token")
-        if (token != null) {
-            mainBackend.get("/store/getItemsInCart/", { headers: { Authorization: "Token " + token } })
-                .then((response) => {
-                    if (response.status == 200) {
-                        setCartItems(response.data)
-                    }
-                })
+        if(token!=null){
+            mainBackend.get("/store/getItemsInCart/",{headers:{Authorization : "Token "+token}})
+            .then((response)=>{
+                if(response.status == 200){
+                    setCartItems(response.data)
+                }
+            })
 
         }
-    }, [true])
-    return (
-        <div className="container ">
-            <div className=" g-0">
-                <h1>Shopping Cart</h1> <hr />
-                <div className="cart">
+    },[true])
+        return (
+            <div className="container ">
+                <div className=" g-0">
+                    <h1>Shopping Cart</h1> <hr />
+                    <div className="cart">
                     <div className="products container h-100">
 
-                        {cartItems === [] || cartItems === null ? <p>no items in cart</p> : cartItems.map((item) => <Card item={item} key={item.id} />)}
+                        {cartItems  === [] || cartItems === null? <p>no items in cart</p>:cartItems.map((item)=><Card item={item} key={item.id}/>)}
                     </div>
-                    <div className="cart-total container">
-                        <p>
-                            <span>Total Price</span>
-                            <span>Rs. {cartItems === [] || cartItems === null ? 0 : cartItems.reduce((price, item) => price + item.Items_ID.Price, 0)}</span>
-                        </p>
-                        <p>
-                            <span>Number of Items</span>
-                            <span>{cartItems === [] || cartItems === null ? 0 : cartItems.length}</span>
-                        </p>
-                        <p>
-                            <span>You Save</span>
-                            <span>Rs. 1,000</span>
-                        </p>
-                        <a href="#">Proceed to Checkout</a>
+                        <div className="cart-total container">
+                            <p>
+                                <span>Total Price</span>
+                                <span>Rs. {cartItems  === [] || cartItems === null?0: cartItems.reduce((price,item)=>price +item.Items_ID.Price,0)}</span>
+                            </p>
+                            <p>
+                                <span>Number of Items</span>
+                                <span>{cartItems  === [] || cartItems === null? 0:cartItems.length }</span>
+                            </p>
+                            <p>
+                                <span>You Save</span>
+                                <span>Rs. 1,000</span>
+                            </p>
+                            <a href="#">Proceed to Checkout</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
 
 export default CartScreen;

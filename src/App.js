@@ -21,6 +21,8 @@ import WishList from "./pages/WishList";
 import ContanctUs from "./pages/ContanctUs";
 import Address from './pages/Address';
 import SignUp from "./pages/SignUp";
+import GetAccount from "./pages/getAccount";
+import Searched from "./pages/searchpage";
 
 function App() {
 	return (
@@ -29,7 +31,7 @@ function App() {
 				<Header />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/Account' element={<Account />} />
+					<Route path='/Account' element={<GetAccount />} />
 					<Route path='/Cartscreen' element={<CartScreen />} />
 					<Route path='/Category' element={<Category />} />
 					<Route path='/DeliveryAddress' element={<DeliveryAddress />} />
@@ -39,7 +41,8 @@ function App() {
 					<Route path='/UserProfile' element={<UserProfile />} />
 					<Route path='/SignUp' element={<SignUp />} />
 					<Route path='/OrderPlaced' element={<OrderPlaced />} />
-					<Route path='/Products' element={<Products />} />
+					<Route path='/Products' element={<Products />} />					
+					<Route path='/Search/:search' element={<Searched />} />
 					<Route path='/Reciept' element={<Reciept />} />
 					<Route path='/ContactUs' element={<ContanctUs />} />
 					<Route path='/WishList' element={<WishList />} />
