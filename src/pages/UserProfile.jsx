@@ -10,19 +10,12 @@ export default class UserProfile extends Component {
                 <div className="container register g-5 pt-3 pb-3 h-100 w-100">
                     <div className="row">
                         <div className="col-md-3 register-left">
-                            <img src={user2} alt="user profile " className="img-responsive w-25 h-70" />
+                            {/* <img src={user2} alt="user profile " className="img-responsive w-25 h-70" />
                             <h2>Tazeen shaikh</h2>
-                            <p>user's short bio</p>
+                            <p>user's short bio</p> */}
                         </div>
                         <div className="col-md-9 register-right">
-                            {/* <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                                <li className="nav-item">
-                                    <Link to="/UserProfile" className="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Signup</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link to="/LoginSignUp" className="nav-link" id="profile-tab" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">Login</Link>
-                                </li>
-                            </ul> */}
+
                             <div className="tab-content" id="myTabContent">
                                 <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <h3 className="register-heading"><u>My Profile</u></h3>

@@ -17,7 +17,7 @@ export default class Account extends Component {
     render() {
         let First_name = localStorage.getItem("First_name");
         let Second_Name = localStorage.getItem("Second_Name");
-        let Photo = localStorage.getItem("Photo");
+        let Photo = localStorage.getItem("Photo"); 
         return (
             <div>
                 <div className="container mb-4 pb-3 g-5 mt-3">
