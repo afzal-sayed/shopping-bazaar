@@ -39,7 +39,7 @@ function SingleProduct() {
                         </div>
                     </div>
                     <div className="content">
-                        <h3>Men's tshirts</h3>
+                        <h3>{data==null?0:data.Name}</h3>
                         <div className="stars">
                             <i className="fas fa-star" />
                             <i className="fas fa-star" />
