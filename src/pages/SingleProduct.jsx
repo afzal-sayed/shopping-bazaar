@@ -27,7 +27,7 @@ function SingleProduct() {
     return (
         <div>
             <section className="featured" id="featured">
-                <h1 className="heading"><br /><br /> <span>featured</span> products </h1>
+                <h1 className="heading"> <span>featured</span> products </h1>
                 <div className="row">
                     <div className="image-container">
                         <div className="small-image">
@@ -39,17 +39,10 @@ function SingleProduct() {
                         </div>
                     </div>
                     <div className="content">
-                        <h3>Men's tshirts</h3>
-                        <div className="stars">
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="far fa-star" />
-                        </div>
+                        <h3>Men's tshirts</h3>                        
                         <p>{data==null? <p>XXXXXXXXX</p> : data.Product_details.description}.</p>
                         <div className="price">Rs.{data==null?0:data.Price} <span>Rs.999</span></div>
-                        <a href="#" className="btn">add to cart</a>
+                        <a href="#" className="btn button1">add to cart</a>
                     </div>
                 </div>
             </section>
