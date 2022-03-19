@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import Products from './Products';
-import Slider from './Slider';
 import Slider2 from './Slider2';
 
 
