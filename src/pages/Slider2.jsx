@@ -21,8 +21,8 @@ export default class Slider2 extends Component {
                                 <img src={lapy2} className="d-block w-100" alt={lapy2} />
                             </div>
                             <div className="carousel-caption d-none d-md-block bg-dark bg-gradient bg-linear bg-opacity-25">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Laptops</h5>
+                                <p>Latest laptops with great specs.</p>
                                 <button className="btn border border-primary text-light btn-primary bg-gradient">Click to know more</button>
                             </div>
                         </div>
@@ -31,8 +31,8 @@ export default class Slider2 extends Component {
                                 <img src={shoe} className="d-block img-responsive w-100" alt={lapy2} />
                             </div>
                             <div className="carousel-caption d-none d-md-block bg-dark bg-gradient bg-linear bg-opacity-25">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5>Amazing Shoes</h5>
+                                <p>We have amazing shoes just for you guys with great pricing.</p>
                                 <button className="btn btn-primary btn-gradient">Click to know more</button>
                             </div>
                         </div>
@@ -41,8 +41,8 @@ export default class Slider2 extends Component {
                                 <img src={fruit} className="d-block w-100" alt={lapy2} />
                             </div>
                             <div className="carousel-caption d-none d-md-block bg-dark bg-gradient bg-linear bg-opacity-25">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5>Fruit and vegetables</h5>
+                                <p>Fresh and healthy Fruit and Vegetables.</p>
                                 <button className="btn btn-primary btn-gradient">Click to know more</button>
                             </div>
                         </div>
