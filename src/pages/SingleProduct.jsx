@@ -40,9 +40,9 @@ function SingleProduct() {
                     </div>
                     <div className="content">
                         <h3>{data == null ? 0 : data.Name}</h3>
-                        
+
                         <p>{data == null ? <p>XXXXXXXXX</p> : data.Product_details.description}.</p>
-                        <div className="price">Rs.{data == null ? 0 : data.Price} <span>Rs.999</span></div>
+                        <div className="price">Rs.{data == null ? 0 : data.Price}</div>
                         <a href="#" className="btn button1">add to cart</a>
                     </div>
                 </div>
