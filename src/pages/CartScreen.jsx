@@ -58,10 +58,6 @@ function CartScreen() {
                             <span>Number of Items</span>
                             <span>{cartItems === [] || cartItems === null ? 0 : cartItems.length}</span>
                         </p>
-                        {/*  <p>
-                                <span>You Save</span>
-                                <span>Rs. 1,000</span>
-                            </p> */}
                         <a href="#">Proceed to Checkout</a>
                     </div>
                 </div>

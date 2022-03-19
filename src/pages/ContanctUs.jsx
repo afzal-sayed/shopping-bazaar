@@ -8,9 +8,9 @@ export default class ContanctUs extends Component {
             <div className='container g-5 mt-5 pb-5'>
                 <form className='g-5'>
                     <div className="form-group ">
-                        <label htmlFor="exampleFormControlInput1">Email address:</label>
+                        <label htmlFor="exampleFormControlInput1">Subject</label>
                         <input
-                            type="email"
+                            type="text"
                             className="form-control border border-dark"
                             id="exampleFormControlInput1"
                             placeholder="name@example.com"

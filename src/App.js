@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import "./Styles/css/styles.css";
 
 import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Footer from "./pages/Footer";
-import Account from "./pages/Account";
 import CartScreen from "./pages/CartScreen";
 import Category from "./pages/Category";
 import DeliveryAddress from "./pages/DeliveryAddress";

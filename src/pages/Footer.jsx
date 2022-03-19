@@ -79,25 +79,7 @@ export default class Footer extends Component {
 									Copyright © 2021 All Rights Reserved by <a href='#'>Shopping Bazaar</a>.
 								</p>
 							</div>
-							{/* <div className='col-md-4 col-sm-6 col-xs-12'>
-								<ul className='social-icons'>
-									<li>
-										<a className='facebook' href='#'>
-											<i className='fa fa-facebook fa-fw' />
-										</a>
-									</li>
-									<li>
-										<a className='twitter' href='#'>
-											<i className='fa fa-twitter' />
-										</a>
-									</li>
-									<li>
-										<a className='linkedin' href='#'>
-											<i className='fa fa-linkedin' />
-										</a>
-									</li>
-								</ul>
-							</div> */}
+
 						</div>
 					</div>
 				</footer>

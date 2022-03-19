@@ -2,46 +2,7 @@ import React, { Component, useState } from 'react'
 import logo from '../img/delievery logo.png'
 
 export default class DeliveryAddress extends Component {
-    /*     constructor(props) {
-            super(props);
-            this.state = {
-                address: '',
-                city: '',
-                state: '',
-                pincode: '',
-                mobile: '',
-                email: '',
-                name: '',
-                address: '',
-                city: '',
-                state: '',
-                pincode: '',
-    
-            }
-        }
-        handleChange = (e) => {
-            this.setState({
-                [e.target.name]: e.target.value
-            })
-        }
-        handleSubmit = (e) => {
-            e.preventDefault();
-            console.log(this.state);
-        } */
-
-
-
     render() {
-        /*  let [addresses, setAddres] = useState();
-         let [name, setName] = useState("");
-         let [number, setNumber] = useState();
-         let [town, setTown] = useState("");
-         let [pincode, setPincode] = useState("");
-         let [Region, setRegion] = useState("");
-         let [landmark, setlandmark] = useState("");
-         let [state, setState] = useState("");
-         let [AddressType, setAddressType] = useState(""); */
-
         return (
             <div>
                 <div className="row mt-3 mx-3" style={{ marginTop: 5 }}>
