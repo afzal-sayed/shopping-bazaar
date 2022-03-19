@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import shoe3 from "../img/shoe3.png";
-import tshirt2 from '../img/tshirt2.png';
+import { Link } from "react-router-dom";
 import { mainBackend } from "./MainBackend"
 
 function Card({ item }) {
@@ -58,7 +57,7 @@ function CartScreen() {
                             <span>Number of Items</span>
                             <span>{cartItems === [] || cartItems === null ? 0 : cartItems.length}</span>
                         </p>
-                        <a href="#">Proceed to Checkout</a>
+                        <Link to='/OrderPlaced' >Proceed to Checkout</Link>
                     </div>
                 </div>
             </div>

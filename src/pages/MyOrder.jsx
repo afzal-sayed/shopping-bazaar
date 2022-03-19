@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-
-import user2 from '../img/user2.png'
+import user from '../img/User.png';
 import watch from '../img/watch1.png'
 import { Link } from 'react-router-dom';
 
 
 export default class MyOrder extends Component {
     render() {
+        let First_name = localStorage.getItem("First_name");
+        let Second_Name = localStorage.getItem("Second_Name");
+        let Photo = localStorage.getItem("Photo");
+        let Phone = localStorage.getItem("Phone");
         return (
             <div className="container g-0">
                 <div className="container-fluid g-0 pt-3 pb-5">
@@ -16,11 +19,11 @@ export default class MyOrder extends Component {
                                 <div className="border-bottom p-4 border-dark ">
                                     <div className="osahan-user text-center">
                                         <div className="osahan-user-media">
-                                            <img className="mb-3 rounded-pill shadow-sm mt-1" src={user2} alt="gurdeep singh osahan" />
+                                            <img src={Photo == null ? user : Photo} alt={First_name} className="mb-3 rounded-pill shadow-sm mt-1" />
                                             <div className="osahan-user-media-body">
-                                                <h6 className="mb-2">Tazeen Shaikh</h6>
+                                                <h6 className="mb-2">{First_name} {Second_Name}</h6>
                                                 <p className="mb-1">+91 8568224564</p>
-                                                <p>tazeensk0114@gmail.com</p>
+                                                <p >sayyed0786afzal@gmail.com</p>
                                                 <p className="mb-0 text-black font-weight-bold">
                                                     <Link className="text-primary mr-3" data-toggle="modal" data-target="#edit-profile-modal"
                                                         to="/UserProfile"><i className="icofont-ui-edit" /> EDIT</Link>
@@ -29,12 +32,7 @@ export default class MyOrder extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <ul className="nav nav-tabs flex-column border-0 pt-4 pl-4 pb-4" id="myTab" role="tablist">
-                                    <li className="nav-item">
-                                        <a className="nav-link" id="orders-tab" data-toggle="tab" href="#orders"
-                                            role="tab" aria-controls="orders" aria-selected="false"><i className="icofont-food-cart" /> Orders</a>
-                                    </li>
-                                </ul> */}
+
                             </div>
                         </div>
                         <div className="col-md-9">

@@ -13,7 +13,7 @@ export default class ContanctUs extends Component {
                             type="text"
                             className="form-control border border-dark"
                             id="exampleFormControlInput1"
-                            placeholder="name@example.com"
+                            placeholder="enter subject"
                         />
                         <label htmlFor="exampleFormControlInput1">Name:</label>
                         <input

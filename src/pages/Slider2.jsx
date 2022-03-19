@@ -28,7 +28,7 @@ export default class Slider2 extends Component {
                         </div>
                         <div className="carousel-item ">
                             <div className="">
-                                <img src={shoe} className="d-block w-100" alt={lapy2} />
+                                <img src={shoe} className="d-block img-responsive w-100" alt={lapy2} />
                             </div>
                             <div className="carousel-caption d-none d-md-block bg-dark bg-gradient bg-linear bg-opacity-25">
                                 <h5>Second slide label</h5>
