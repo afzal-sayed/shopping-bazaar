@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import tshirt4 from '../img/tshirt4.png'
+import tshirt5 from '../img/tshirt5.png'
+import tshirt6 from '../img/tshirt6.png'
+import tshirt2 from '../img/tshirt2.png'
 
 function FeaturedProduct() {
 
@@ -9,13 +13,13 @@ function FeaturedProduct() {
                 <div className="row">
                     <div className="image-container">
                         <div className="small-image">
-                            <img src="./img/tshirt4.png" className="featured-image-3" alt />
-                            <img src="./img/tshirt5.png" className="featured-image-3" alt />
-                            <img src="./img/tshirt6.png" className="featured-image-3" alt />
-                            <img src="./img/tshirt2.png" className="featured-image-3" alt />
+                            <img src={tshirt4} className="featured-image-3" alt />
+                            <img src={tshirt5} className="featured-image-3" alt />
+                            <img src={tshirt6} className="featured-image-3" alt />
+                            <img src={tshirt2} className="featured-image-3" alt />
                         </div>
                         <div className="big-image">
-                            <img src="./img/tshirt4.png" className="big-image-3" alt />
+                            <img src={tshirt4} className="big-image-3" alt />
                         </div>
                     </div>
                     <div className="content">
