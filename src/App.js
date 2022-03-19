@@ -21,7 +21,7 @@ import Address from './pages/Address';
 import SignUp from "./pages/SignUp";
 import GetAccount from "./pages/getAccount";
 import Searched from "./pages/searchpage";
-import FeaturedProduct from "./pages/FeaturedProduct.Jsx";
+import SingleProduct from "./pages/SingleProduct.jsx"
 
 function App() {
 	return (
@@ -34,7 +34,7 @@ function App() {
 					<Route path='/Cartscreen' element={<CartScreen />} />
 					<Route path='/Category' element={<Category />} />
 					<Route path='/DeliveryAddress' element={<DeliveryAddress />} />
-					<Route path='/FeaturedProduct' element={<FeaturedProduct />} />
+					<Route path='/FeaturedProduct/:id' element={<SingleProduct />} />
 					<Route path='/LoginSignUp' element={<LoginSignUp />} />
 					<Route path='/MyOrder' element={<MyOrder />} />
 					<Route path='/UserProfile' element={<UserProfile />} />

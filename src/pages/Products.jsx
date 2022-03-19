@@ -7,10 +7,12 @@ import { mainBackend } from "./MainBackend"
 
 function Card(data) {
     let dat = data.data
-
+    function handleClick(){
+        window.location.href = "/FeaturedProduct/"+dat.id
+    }
     let image = dat.Display_Image.startsWith("data:image") ? dat.Display_Image : "data:image/png;base64," + dat.Display_Image
     return (
-        <div className="box border border-dark">
+        <div className="box border border-dark" onClick={handleClick}>
             <div className="icons">
                 <a href="#" className="fas fa-heart" />
             </div>
