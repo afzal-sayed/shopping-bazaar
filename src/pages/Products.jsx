@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import "../Styles/css/styling.css";
-
+import { useNavigate } from 'react-router';
 import { mainBackend } from "./MainBackend"
 
 
 
 function Card(data) {
     let dat = data.data
+    let navigator = useNavigate();
     function handleClick() {
-        window.location.href = "/FeaturedProduct/" + dat.id
+        navigator("/FeaturedProduct/" + dat.id)
     }
     let image = dat.Display_Image.startsWith("data:image") ? dat.Display_Image : "data:image/png;base64," + dat.Display_Image
     return (

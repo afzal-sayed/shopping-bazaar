@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { mainBackend } from "./MainBackend";
-
+import {useNavigate} from "react-router-dom"
 
 function Header() {
     let search = React.useRef()
-
-    function handleClick(e) {
-        e.preventDefault()
-        console.log(search.current.value)
-        window.location.href = '/Search/' + search.current.value;
-    }
+    let navigation = useNavigate()
 
     return (
         <div >
@@ -56,9 +51,11 @@ function Header() {
 
                             </li>
                         </ul>
-                        <form className="d-flex justify-content-end" onSubmit={handleClick}>
+                        <form className="d-flex justify-content-end" onSubmit={(e)=>{
+                            e.preventDefault()
+                            navigation('/Search/'+search.current.value)}} >
                             <input className="form-control me-2" type="text" ref={search} placeholder="Search" aria-label="Search" />
-                            <button className="button1 btn btn-outline-primary " type="submit">Search</button>
+                            <button className="button1 btn btn-outline-primary " onClick={()=>navigation('/Search/'+search.current.value)} type="button">Search</button>
                         </form>
                         <div className="icon d-flex justify-content-center ">
                             <Link to='/WishList' className="fas fa-heart p-2 " />

@@ -1,14 +1,15 @@
 import React from 'react'
 import "../Styles/css/styling.css";
-
+import { useNavigate } from 'react-router';
 import {mainBackend} from "./MainBackend"
 import { useParams } from 'react-router';
 
 
 function Card (data){
-    let dat = data.data
+    let dat = data.data;
+    let navigation = useNavigate();
     function handleClick(){
-        window.location.href = "/FeaturedProduct/"+dat.id
+        navigation("/FeaturedProduct/"+dat.id);
     }
     let image = dat.Display_Image.startsWith("data:image") ? dat.Display_Image : "data:image/png;base64,"+dat.Display_Image
     return (
@@ -37,12 +38,12 @@ function Searched() {
             }}).then((response)=>{
                 setData(response.data.results)
             }).catch(err=>console.log(err))
-    },[true])
+    },[seachstring.search])
         return (
             <div>
                 <section className="products" id="products">
 
-                    <h1 className="heading"> you searched for,   </h1><hr />
+                    <h1 className="heading"> you searched for, {seachstring.search}  </h1><hr />
                     <div className="box-container ">
                         {data!= null && data.length >0 ?data.map((elemnt)=> <Card data={elemnt} key={elemnt.Name} /> ):<p>no product available</p> }
                     </div>
