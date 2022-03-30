@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react'
 import logo from '../img/delievery logo.png'
+import { Link } from 'react-router-dom';
 
 export default class DeliveryAddress extends Component {
     render() {
@@ -13,7 +14,9 @@ export default class DeliveryAddress extends Component {
                             <p className="white-p">You are 30 seconds away from compleating your order!</p>
                         </div>
                         <div className="p-center">
-                            <button type="submit" className="btn btn-white btn-rounded back-button">Go back</button>
+                            <Link to="/Account">
+                                <button type="submit" className="btn btn-white btn-rounded back-button">Go back</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-9 justify-content-center">

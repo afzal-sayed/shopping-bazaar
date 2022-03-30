@@ -31,33 +31,19 @@ export default class Products extends Component {
     categories = ["Hygiene", "Groceries", "Fashion", "Electronic"]
     categorie_num = { Electronic: 1, Fashion: 2, Groceries: 3, Hygiene: 4 }
     state = {};
-    // Electronic 1
-    // Fashion 2
-    // Groceries 3
-    // Hygiene 4
-
-
-
-
     getAllData() {
         this.categories.map((categorie) => {
             mainBackend.get("/store/getSortItems/", { params: { categories: this.categorie_num[categorie] } })
                 .then((response) => { this.setState({ [categorie]: response.data.results }) })
         })
     }
-
     componentDidMount() {
-
         this.getAllData()
     }
-
-
     render() {
-
         return (
             <div>
                 <section className="products" id="products">
-
                     <h1 className="heading"> Electronic </h1><hr />
                     <div className="box-container ">
                         {this.state.Electronic != null ? this.state.Electronic.slice(0,).map((elemnt) => <Card data={elemnt} key={elemnt.Name} />) : <p>no prod available</p>}
