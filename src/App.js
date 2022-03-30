@@ -14,9 +14,9 @@ import MyOrder from "./pages/MyOrder";
 import UserProfile from "./pages/UserProfile";
 import OrderPlaced from "./pages/OrderPlaced";
 import Products from "./pages/Products";
-import Reciept from "./pages/Reciept";
+import Receipt from "./pages/Receipt";
 import WishList from "./pages/WishList";
-import ContanctUs from "./pages/ContanctUs";
+import ContactUs from "./pages/ContactUs";
 import Address from './pages/Address';
 import SignUp from "./pages/SignUp";
 import GetAccount from "./pages/getAccount";
@@ -26,6 +26,7 @@ import Hygiene from "./pages/Hygiene";
 import Electronics from "./pages/Electronic";
 import Fashion from "./pages/Fashion";
 import Groceries from "./pages/Groceries";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
 	return (
@@ -37,6 +38,7 @@ function App() {
 					<Route path='/Account' element={<GetAccount />} />
 					<Route path='/Cartscreen' element={<CartScreen />} />
 					<Route path='/Category' element={<Category />} />
+					<Route path='/AboutUs' element={<AboutUs />} />
 					<Route path='/DeliveryAddress' element={<DeliveryAddress />} />
 					<Route path='/FeaturedProduct/:id' element={<SingleProduct />} />
 					<Route path='/LoginSignUp' element={<LoginSignUp />} />
@@ -50,8 +52,8 @@ function App() {
 					<Route path='/Electronics' element={<Electronics />} />
 					<Route path='/Groceries' element={<Groceries />} />
 					<Route path='/Search/:search' element={<Searched />} />
-					<Route path='/Reciept' element={<Reciept />} />
-					<Route path='/ContactUs' element={<ContanctUs />} />
+					<Route path='/Receipt' element={<Receipt />} />
+					<Route path='/ContactUs' element={<ContactUs />} />
 					<Route path='/WishList' element={<WishList />} />
 					<Route path='/Address' element={<Address />} />
 				</Routes>

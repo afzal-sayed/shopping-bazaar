@@ -1762,6 +1762,51 @@ form .btn input[type=submit] {
   }
 }
 /* !order placed end*/
+/* !about us */
+.AboutUs .Logo {
+  width: 100%;
+}
+.AboutUs .typed {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.AboutUs .css-typing {
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid black;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* !about us End */
 .errormsg {
   color: #dc3545;
   font-size: 12px;

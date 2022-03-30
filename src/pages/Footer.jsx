@@ -33,17 +33,17 @@ export default class Footer extends Component {
 								<h6>Quick Links</h6>
 								<ul className='footer-links'>
 									<li>
-										<Link to='/About_Us' >About Us</Link>
+										<Link to='/AboutUs' >About Us</Link>
 									</li>
 									<li>
 										<Link to='/ContactUs'>Contact Us</Link>
 									</li>
-									<li>
+									{/* <li>
 										<Link to='/Contribute' >Contribute</Link>
 									</li>
 									<li>
 										<Link to='/Privacy_Policy' >Privacy Policy</Link>
-									</li>
+									</li> */}
 								</ul>
 							</div>
 							<div className='col-xs-6 col-md-3'>
@@ -52,23 +52,23 @@ export default class Footer extends Component {
 								</Link>
 								<ul className='footer-links'>
 									<li>
-										<p>Phone no: <a href='tel:1234'>1234</a></p>
+										<p>Phone no: <a href='tel:7021583371'>7021583371</a></p>
 									</li>
 									<li>
-										<p>Email id: <a href='mailto:asd@gmail.com'>asd@gmail.com</a></p>
+										<p>Email id: <a href='mailto:sayyed0786afzal@gmail.com'>sayyed0786afzal@gmail.com</a></p>
 									</li>
 								</ul>
 							</div>
 
-							<div className='col-sm-4 col-md-3'>
-								<a href='/About Us'>
+							{/* <div className='col-sm-4 col-md-3'>
+								<a href='#'>
 
 									<h6>About</h6>
 								</a>
 								<p className='text-justify'>
 									<i>Shopping Bazaar</i>
 								</p>
-							</div>
+							</div> */}
 						</div>
 						<hr className='hrblack' />
 					</div>
@@ -76,7 +76,7 @@ export default class Footer extends Component {
 						<div className='row'>
 							<div className='col-md-8 col-sm-6 col-xs-12'>
 								<p className='copyright-text'>
-									Copyright © 2021 All Rights Reserved by <a href='#'>Shopping Bazaar</a>.
+									Copyright © 2021 All Rights Reserved by <a href=''>Shopping Bazaar</a>.
 								</p>
 							</div>
 
