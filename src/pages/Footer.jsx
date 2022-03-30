@@ -22,11 +22,11 @@ export default class Footer extends Component {
 										<Link to='/Groceries' >Groceries</Link>
 									</li>
 									<li>
-										<Link to='/Hygine' >Hygine</Link>
+										<Link to='/Hygiene' >Hygiene</Link>
 									</li>
-									<li>
+									{/* <li>
 										<Link to='/Beauty_&_More' >Beauty & More</Link>
-									</li>
+									</li> */}
 								</ul>
 							</div>
 							<div className='col-xs-6 col-md-3'>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { mainBackend } from "./MainBackend";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function Header() {
     let search = React.useRef()
@@ -38,11 +38,11 @@ function Header() {
                                         <Link to='/Groceries' className="dropdown-item">Groceries</Link>
                                     </li>
                                     <li>
-                                        <Link to='/Hygine' className="dropdown-item">Hygine</Link>
+                                        <Link to='/Hygiene' className="dropdown-item">Hygiene</Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to='/Beauty & More' className="dropdown-item">Beauty & More</Link>
-                                    </li>
+                                    </li> */}
 
                                 </ul>
                             </li>
@@ -51,11 +51,12 @@ function Header() {
 
                             </li>
                         </ul>
-                        <form className="d-flex justify-content-end" onSubmit={(e)=>{
+                        <form className="d-flex justify-content-end" onSubmit={(e) => {
                             e.preventDefault()
-                            navigation('/Search/'+search.current.value)}} >
+                            navigation('/Search/' + search.current.value)
+                        }} >
                             <input className="form-control me-2" type="text" ref={search} placeholder="Search" aria-label="Search" />
-                            <button className="button1 btn btn-outline-primary " onClick={()=>navigation('/Search/'+search.current.value)} type="button">Search</button>
+                            <button className="button1 btn btn-outline-primary " onClick={() => navigation('/Search/' + search.current.value)} type="button">Search</button>
                         </form>
                         <div className="icon d-flex justify-content-center ">
                             <Link to='/WishList' className="fas fa-heart p-2 " />

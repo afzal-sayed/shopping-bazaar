@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./Styles/css/styles.css";
 
@@ -22,6 +22,10 @@ import SignUp from "./pages/SignUp";
 import GetAccount from "./pages/getAccount";
 import Searched from "./pages/searchpage";
 import SingleProduct from "./pages/SingleProduct.jsx"
+import Hygiene from "./pages/Hygiene";
+import Electronics from "./pages/Electronic";
+import Fashion from "./pages/Fashion";
+import Groceries from "./pages/Groceries";
 
 function App() {
 	return (
@@ -41,6 +45,10 @@ function App() {
 					<Route path='/SignUp' element={<SignUp />} />
 					<Route path='/OrderPlaced' element={<OrderPlaced />} />
 					<Route path='/Products' element={<Products />} />
+					<Route path='/Hygiene' element={<Hygiene />} />
+					<Route path='/Fashion' element={<Fashion />} />
+					<Route path='/Electronics' element={<Electronics />} />
+					<Route path='/Groceries' element={<Groceries />} />
 					<Route path='/Search/:search' element={<Searched />} />
 					<Route path='/Reciept' element={<Reciept />} />
 					<Route path='/ContactUs' element={<ContanctUs />} />
