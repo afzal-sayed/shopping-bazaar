@@ -60,15 +60,7 @@ export default class Footer extends Component {
 								</ul>
 							</div>
 
-							{/* <div className='col-sm-4 col-md-3'>
-								<a href='#'>
-
-									<h6>About</h6>
-								</a>
-								<p className='text-justify'>
-									<i>Shopping Bazaar</i>
-								</p>
-							</div> */}
+							
 						</div>
 						<hr className='hrblack' />
 					</div>

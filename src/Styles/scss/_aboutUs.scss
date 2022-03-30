@@ -4,7 +4,6 @@
 .AboutUs {
     .Logo {
         width: 100%;
-
     }
 
     .typed {
@@ -14,18 +13,14 @@
         margin-bottom: 1rem;
     }
 
-    .css-typing {
-
+    .typing {
         border-right: .15em solid orange;
         white-space: nowrap;
         overflow: hidden;
         width: 100%;
         opacity: 0;
-        -webkit-animation: type2 2s steps(40, end);
         animation: type2 2s steps(40, end);
-        -webkit-animation-delay: 0s;
         animation-delay: 0s;
-        -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
 
@@ -38,8 +33,8 @@
             opacity: 1;
         }
 
-        99.9% {
-            border-right: .15em solid rgb(0, 0, 0);
+        90% {
+            border-right: .15em solid rgb(109, 108, 108);
         }
 
         100% {

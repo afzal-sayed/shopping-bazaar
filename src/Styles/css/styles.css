@@ -195,11 +195,15 @@ hr {
   color: #000;
 }
 
-.fa,
 .fas {
   font-weight: 900;
   color: aliceblue;
   font-size: larger;
+}
+@media screen and (max-width: 769px) {
+  .fas {
+    font-size: 1.8em;
+  }
 }
 
 /* !header end */
@@ -395,6 +399,17 @@ section {
 }
 
 /* !product end */
+.accounts .list-group-item {
+  font-size: 1em;
+  color: #000;
+  font-weight: 900;
+}
+@media screen and (max-width: 769px) {
+  .accounts .list-group-item {
+    font-size: 0.8em;
+  }
+}
+
 .h1 {
   text-align: center;
 }
@@ -435,17 +450,10 @@ hr {
 }
 .author-card .author-card-cover .btn {
   position: absolute;
-  /* top: 12px;
-  right: 12px;
-  padding: 0 10px; */
 }
 .author-card .author-card-profile {
   display: table;
   position: relative;
-  /* margin-top: -22px;
-  padding-right: 15px;
-  padding-bottom: 16px;
-  padding-left: 20px; */
   z-index: 5;
 }
 .author-card .author-card-profile .author-card-avatar,
@@ -469,8 +477,14 @@ hr {
 }
 .author-card .author-card-profile .author-card-name {
   margin-bottom: 2px;
-  font-size: 14px;
+  font-size: 1.8em;
+  left: 10px;
   font-weight: bold;
+}
+@media screen and (max-width: 769px) {
+  .author-card .author-card-profile .author-card-name {
+    font-size: 1.3em;
+  }
 }
 .author-card .author-card-profile .author-card-position {
   display: block;
@@ -1660,7 +1674,8 @@ input[type=radio] {
 }
 .form-inner form .field input:focus {
   border-color: #fc83bb;
-  /* box-shadow: inset 0 0 3px #fb6aae; */
+  /* box-shadow: inset 0 0 3px #fb6aae;
+  */
 }
 .form-inner form .field input::placeholder {
   color: #999;
@@ -1689,8 +1704,8 @@ form .field input:focus::placeholder {
 }
 
 form .btn {
-  height: 50px;
-  width: 100%;
+  height: 40px;
+  width: 40%;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1772,17 +1787,14 @@ form .btn input[type=submit] {
   color: #000;
   margin-bottom: 1rem;
 }
-.AboutUs .css-typing {
+.AboutUs .typing {
   border-right: 0.15em solid orange;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
   opacity: 0;
-  -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
-  -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 @keyframes type2 {
@@ -1792,8 +1804,8 @@ form .btn input[type=submit] {
   1% {
     opacity: 1;
   }
-  99.9% {
-    border-right: 0.15em solid black;
+  90% {
+    border-right: 0.15em solid #6d6c6c;
   }
   100% {
     opacity: 1;

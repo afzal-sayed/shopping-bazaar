@@ -17,12 +17,12 @@ export default class Account extends Component {
     render() {
         let First_name = localStorage.getItem("First_name");
         let Second_Name = localStorage.getItem("Second_Name");
-        let Photo = localStorage.getItem("Photo"); 
+        let Photo = localStorage.getItem("Photo");
         return (
-            <div>
+            <div className="">
                 <div className="container mb-4 pb-3 g-5 mt-3">
                     <div className="row border border-dark ">
-                        <div className="col  ">
+                        <div className="col accounts ">
                             <div className="author-card pb-3  container-fluid ">
 
                                 <div className="author-card-profile ">
@@ -50,9 +50,8 @@ export default class Account extends Component {
                                     < Link to='/Cartscreen' className="list-group-item" >
                                         <i className="fa fa-shopping-cart text-muted" /> My Cart
                                     </Link>
-                                    <a onClick={this.logout} className="list-group-item" href="#" >
+                                    <a onClick={this.logout} className="list-group-item" >
                                         <i className="fa fa-sign-out text-muted" />Log Out</a>
-
                                 </nav>
                             </div>
                         </div>

@@ -58,7 +58,7 @@ function Header() {
                             <input className="form-control me-2" type="text" ref={search} placeholder="Search" aria-label="Search" />
                             <button className="button1 btn btn-outline-primary " onClick={() => navigation('/Search/' + search.current.value)} type="button">Search</button>
                         </form>
-                        <div className="icon d-flex justify-content-center ">
+                        <div className="icon d-flex justify-content-lg-center justify-content-end">
                             <Link to='/WishList' className="fas fa-heart p-2 " />
                             <Link to='/Cartscreen' className="fas fa-shopping-cart p-2" />
                             <Link to='/Account' className="fas fa-user p-2 " />

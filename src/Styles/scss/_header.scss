@@ -22,11 +22,15 @@
 	color: $black;
 }
 
-.fa,
 .fas {
 	font-weight: 900;
 	color: aliceblue;
 	font-size: larger;
+
+	@media screen and (max-width: 769px) {
+		font-size: 1.8em;
+		
+	}
 }
 
 /* !header end */

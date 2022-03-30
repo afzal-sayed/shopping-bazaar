@@ -1,5 +1,15 @@
 @import "utilities/colors";
 
+.accounts .list-group-item {
+	font-size: 1em;
+	color: $black;
+	font-weight: 900;
+
+	@media screen and (max-width: 769px) {
+		font-size: .8em;
+	}
+}
+
 .h1 {
 	text-align: center;
 }
@@ -16,11 +26,9 @@ hr {
 
 .author-card {
 	position: relative;
-	// padding-bottom: 48px;
 	background-color: $white;
 	text-decoration: underline;
 	box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
-
 
 	.author-card-cover {
 		position: relative;
@@ -29,7 +37,6 @@ hr {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-
 
 		&::after {
 			display: block;
@@ -44,19 +51,13 @@ hr {
 
 		.btn {
 			position: absolute;
-			/* top: 12px;
-			right: 12px;
-			padding: 0 10px; */
+
 		}
 	}
 
 	.author-card-profile {
 		display: table;
 		position: relative;
-		/* margin-top: -22px;
-		padding-right: 15px;
-		padding-bottom: 16px;
-		padding-left: 20px; */
 		z-index: 5;
 
 		.author-card-avatar,
@@ -84,8 +85,13 @@ hr {
 
 		.author-card-name {
 			margin-bottom: 2px;
-			font-size: 14px;
+			font-size: 1.8em;
+			left: 10px;
 			font-weight: bold;
+
+			@media screen and (max-width: 769px) {
+				font-size: 1.3em;
+			}
 		}
 
 		.author-card-position {
@@ -111,14 +117,14 @@ hr {
 		.author-card-social-bar {
 			display: table;
 			margin: auto;
-			background-color: $white;
+			background-color: #fff;
 			box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
 		}
 	}
 }
 
 .btn-style-1.btn-white {
-	background-color: $white;
+	background-color: #fff;
 }
 
 .list-group-item i {
@@ -136,7 +142,7 @@ hr {
 
 .list-group-item.active:not(.disabled) {
 	border-color: #e7e7e7;
-	background: $white;
+	background: #fff;
 	color: #ac32e4;
 	cursor: default;
 	pointer-events: none;
@@ -159,7 +165,7 @@ hr {
 .list-group-item {
 	&.active {
 		z-index: 2;
-		color: $white;
+		color: #fff;
 		background-color: #007bff;
 		border-color: #007bff;
 	}
@@ -194,7 +200,7 @@ a.list-group-item,
 	display: block;
 	padding: 0.75rem 1.25rem;
 	margin-bottom: -1px;
-	background-color: $white;
+	background-color: #fff;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -280,7 +286,7 @@ a.list-group-item,
 	.product-buttons {
 		display: table;
 		margin: auto;
-		background-color: $white;
+		background-color: #fff;
 		box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
 	}
 
@@ -311,7 +317,7 @@ a.list-group-item,
 
 			&:hover {
 				background-color: #ac32e4;
-				color: $white;
+				color: #fff;
 			}
 		}
 	}
@@ -439,7 +445,7 @@ a.list-group-item,
 				width: 94px;
 				transition: all 0.25s;
 				border: 1px solid transparent;
-				background-color: $white;
+				background-color: #fff;
 				opacity: 0.75;
 			}
 
@@ -492,7 +498,7 @@ a.list-group-item,
 	position: relative;
 	margin-bottom: 30px;
 	padding: 0 50px 0 10px;
-	background-color: $white;
+	background-color: #fff;
 	box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
 
 	.cart-item-label {
@@ -614,7 +620,7 @@ a.list-group-item,
 		position: relative;
 		margin-bottom: 10px;
 		padding: 13px 12px 18px;
-		background-color: $white;
+		background-color: #fff;
 		text-align: center;
 		box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
 
@@ -657,7 +663,7 @@ a.list-group-item,
 	padding-left: 1px;
 	border-radius: 50%;
 	background-color: #ff5252;
-	color: $white;
+	color: #fff;
 	line-height: 23px;
 	text-align: center;
 	box-shadow: 0 3px 12px 0 rgba(255, 82, 82, 0.5);
