@@ -1384,7 +1384,7 @@ a:hover {
 }
 
 .white-text {
-  color: #fafafa;
+  color: hsl(52deg, 0%, 98%);
   font-weight: 100;
   color: black;
   font-size: 14px;
@@ -1704,8 +1704,9 @@ form .field input:focus::placeholder {
 }
 
 form .btn {
-  height: 40px;
+  height: 50px;
   width: 40%;
+  text-align: center;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1747,7 +1748,7 @@ form .btn input[type=submit] {
   text-align: center;
 }
 #orderContainer i {
-  color: #05bb05;
+  color: rgb(5, 187, 5);
   padding-bottom: 30px;
   font-size: 10em;
 }
@@ -1805,7 +1806,7 @@ form .btn input[type=submit] {
     opacity: 1;
   }
   90% {
-    border-right: 0.15em solid #6d6c6c;
+    border-right: 0.15em solid rgb(109, 108, 108);
   }
   100% {
     opacity: 1;
